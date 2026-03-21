@@ -975,5 +975,93 @@ const io=new IntersectionObserver(entries=>entries.forEach(e=>{
 }),{threshold:.08});
 document.querySelectorAll('.sr').forEach(el=>io.observe(el));
 </script>
+  <!-- Kifayat Join Us Popup -->
+<style>
+.kf-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:1rem;}
+.kf-overlay.active{display:flex;}
+.kf-popup{background:#0a0a0a;border:0.5px solid #2a2a2a;border-radius:16px;width:100%;max-width:420px;padding:2rem 2rem 1.5rem;position:relative;font-family:'DM Sans',sans-serif;}
+.kf-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:#666;cursor:pointer;font-size:20px;}
+.kf-logo-area{text-align:center;margin-bottom:1.5rem;}
+.kf-logo-area img{height:56px;object-fit:contain;}
+.kf-title{font-family:'EB Garamond',serif;font-size:22px;color:#e8e0d0;font-weight:400;margin:0 0 0.25rem;text-align:center;}
+.kf-sub{font-size:12px;color:#666;text-align:center;margin-bottom:1.5rem;line-height:1.5;}
+.kf-field{margin-bottom:1rem;}
+.kf-label{font-size:11px;color:#888;letter-spacing:0.08em;text-transform:uppercase;display:block;margin-bottom:6px;}
+.kf-input,.kf-select{width:100%;background:#141414;border:0.5px solid #2a2a2a;border-radius:8px;color:#e8e0d0;font-size:13px;padding:10px 12px;box-sizing:border-box;outline:none;transition:border-color 0.2s;}
+.kf-input:focus,.kf-select:focus{border-color:#c8922a;}
+.kf-select option{background:#141414;}
+.kf-row{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;}
+.kf-btn{width:100%;background:#c8922a;border:none;border-radius:8px;color:#0a0a0a;font-size:13px;font-weight:500;padding:12px;cursor:pointer;margin-top:0.5rem;letter-spacing:0.04em;transition:opacity 0.2s;}
+.kf-btn:hover{opacity:0.88;}
+.kf-footer{text-align:center;font-size:11px;color:#444;margin-top:1rem;}
+</style>
+
+<div class="kf-overlay" id="kfModal">
+  <div class="kf-popup">
+    <button class="kf-close" onclick="document.getElementById('kfModal').classList.remove('active')">&#x2715;</button>
+    <div class="kf-logo-area">
+      <img src="/logo.png" alt="Kifayat Collective" onerror="this.style.display='none';document.getElementById('kf-fb').style.display='block'">
+      <div id="kf-fb" style="display:none;font-family:'EB Garamond',serif;font-size:28px;color:#c8922a;">kifayat</div>
+    </div>
+    <p class="kf-title">Join the Community</p>
+    <p class="kf-sub">For calligraphy artists &amp; enthusiasts<br>who live by the stroke.</p>
+    <div class="kf-field">
+      <label class="kf-label">Your name</label>
+      <input class="kf-input" id="kf-name" type="text" placeholder="e.g. Amina Khan" />
+    </div>
+    <div class="kf-row">
+      <div class="kf-field">
+        <label class="kf-label">City</label>
+        <input class="kf-input" id="kf-city" type="text" placeholder="e.g. Dubai" />
+      </div>
+      <div class="kf-field">
+        <label class="kf-label">I am a...</label>
+        <select class="kf-select" id="kf-role">
+          <option value="">Select</option>
+          <option value="Enthusiast">Enthusiast</option>
+          <option value="Practicing artist">Practicing artist</option>
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+        </select>
+      </div>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">Style / script interest</label>
+      <select class="kf-select" id="kf-style">
+        <option value="">Select your interest</option>
+        <option value="Arabic calligraphy">Arabic calligraphy</option>
+        <option value="Devanagari / Hindi">Devanagari / Hindi</option>
+        <option value="Latin / Western">Latin / Western</option>
+        <option value="Mixed / experimental">Mixed / experimental</option>
+        <option value="Just exploring">Just exploring</option>
+      </select>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">What brings you to Kifayat?</label>
+      <input class="kf-input" id="kf-why" type="text" placeholder="e.g. learn, collaborate, share work..." />
+    </div>
+    <button class="kf-btn" onclick="kfSend()">Send to WhatsApp &rarr;</button>
+    <p class="kf-footer">You'll be redirected to WhatsApp to complete joining</p>
+  </div>
+</div>
+
+<script>
+function kfSend(){
+  var name=document.getElementById('kf-name').value.trim();
+  var city=document.getElementById('kf-city').value.trim();
+  var role=document.getElementById('kf-role').value;
+  var style=document.getElementById('kf-style').value;
+  var why=document.getElementById('kf-why').value.trim();
+  if(!name||!role||!style){alert('Please fill in your name, role and style interest.');return;}
+  var msg="Hi Kifayat Collective! I'd like to join the community.%0A%0A"
+    +"*Name:* "+encodeURIComponent(name)+"%0A"
+    +(city?"*City:* "+encodeURIComponent(city)+"%0A":"")
+    +"*I am a:* "+encodeURIComponent(role)+"%0A"
+    +"*Style interest:* "+encodeURIComponent(style)+"%0A"
+    +(why?"*What brings me:* "+encodeURIComponent(why):"");
+  window.open("https://wa.me/918943015958?text="+msg,"_blank");
+}
+</script>
+<!-- End Kifayat Popup -->
 </body>
 </html>
