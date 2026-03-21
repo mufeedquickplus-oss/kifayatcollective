@@ -1094,5 +1094,30 @@ function kfSend(){
 }
 </script>
 <!-- End Kifayat Popup -->
+  <script>
+(function(){
+  var chars = ['क','ि','फ','ा','य','त','अ','र','स','ल','ग','न','म','ब','व','श','ध','ट','ह','प'];
+  var sizes = [80,120,160,200,240,280,320];
+  var sections = document.querySelectorAll('section');
+  sections.forEach(function(sec){
+    sec.classList.add('letter-bg');
+    var container = document.createElement('div');
+    container.className = 'float-letters';
+    var count = 6;
+    for(var i=0;i<count;i++){
+      var span = document.createElement('span');
+      span.textContent = chars[Math.floor(Math.random()*chars.length)];
+      span.style.fontSize = sizes[Math.floor(Math.random()*sizes.length)]+'px';
+      span.style.left = (Math.random()*90)+'%';
+      span.style.top = (Math.random()*90)+'%';
+      span.style.transform = 'rotate('+(Math.random()*40-20)+'deg)';
+      span.style.opacity = (0.04 + Math.random()*0.07).toFixed(2);
+      container.appendChild(span);
+    }
+    sec.insertBefore(container, sec.firstChild);
+  });
+})();
+</script>
+
 </body>
 </html>
