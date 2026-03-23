@@ -1098,7 +1098,7 @@ function kfSend(){
     var dur    = 8   + Math.random() * 14;         // 8–22s rise time
     var delay  = Math.random() * 6;               // stagger start
     var rot    = -20 + Math.random() * 40;         // -20 to +20deg
-    var opac   = 0.04 + Math.random() * 0.07;      // very subtle
+var opac   = 0.03 + Math.random() * 0.04;      // max opacity 0.07
     el.style.cssText = [
       'font-size:'       + size  + 'px',
       'left:'            + left  + '%',
@@ -1112,8 +1112,8 @@ function kfSend(){
     setTimeout(function(){ el.remove(); }, (dur + delay) * 1000);
   }
   // spawn 8 immediately, then one every 1.8s
-  for(var i=0; i<8; i++) spawnLetter();
-  setInterval(spawnLetter, 1800);
+for(var i=0; i<3; i++) spawnLetter();
+setInterval(spawnLetter, 4000);
 })();
 </script>
 
