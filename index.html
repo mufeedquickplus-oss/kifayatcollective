@@ -619,10 +619,10 @@ footer {
 .hero { overflow: hidden; }
 
 @keyframes emberRise {
-  0%   { transform: translateY(0px)   translateX(0px)  rotate(var(--r)); opacity: 0; }
-  10%  { opacity: var(--o); }
-  85%  { opacity: var(--o); }
-  100% { transform: translateY(-85vh) translateX(var(--drift)) rotate(var(--r2)); opacity: 0; }
+  0%   { transform: translateY(0px)   rotate(-10deg); opacity: 0; }
+  15%  { opacity: inherit; }
+  85%  { opacity: inherit; }
+  100% { transform: translateY(-85vh) rotate(10deg);  opacity: 0; }
 }
 .ember {
   position: absolute;
@@ -1105,19 +1105,17 @@ function kfSend(){
     var rot   = -15 + Math.random() * 30;         // slight tilt
     var rot2  = rot + (-8 + Math.random() * 16);  // gentle spin as it rises
     var drift = (-30 + Math.random() * 60) + 'px';// sway left/right
-    var opac  = 0.04 + Math.random() * 0.05;      // 0.04–0.09 max
+    var opac  = 0.04 + Math.random() * 0.05;
 
-    el.style.cssText = [
-      'font-size:'          + size  + 'px',
-      'left:'               + left  + '%',
-      '--r:'                + rot   + 'deg',
-      '--r2:'               + rot2  + 'deg',
-      '--drift:'            + drift,
-      '--o:'                + opac,
-      'animation-duration:' + dur   + 's',
-      'animation-delay:'    + delay + 's',
-    ].join(';');
+el.style.cssText = [
+  'font-size:'          + size  + 'px',
+  'left:'               + left  + '%',
+  'opacity:'            + opac,
+  'animation-duration:' + dur   + 's',
+  'animation-delay:'    + delay + 's',
+].join(';');
 
+    
     hero.appendChild(el);
     setTimeout(function(){ el.remove(); }, (dur + delay + 1) * 1000);
   }
