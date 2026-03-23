@@ -615,22 +615,7 @@ footer {
 }
 .kf-btn:hover { opacity:.88; }
 .kf-footer { text-align:center; font-size:11px; color:#444; margin-top:1rem; }
-/* ─── FLOATING RISING LETTERS ─── */
-@keyframes floatUp {
-  0%   { transform: translateY(0)   rotate(var(--r)) scale(1);    opacity: var(--o); }
-  80%  { opacity: var(--o); }
-  100% { transform: translateY(-110vh) rotate(var(--r)) scale(1.1); opacity: 0; }
-}
-.rise-letter {
-  position: absolute;
-  font-family: 'Noto Nastaliq Urdu', serif;
-  color: #b8903a;
-  pointer-events: none;
-  user-select: none;
-  animation: floatUp linear infinite;
-  bottom: -10%;
-  z-index: 1;
-}
+
 </style>
 </head>
 <body>
@@ -1085,36 +1070,6 @@ function kfSend(){
     +(why?"*What brings me:* "+encodeURIComponent(why):"");
   window.open("https://wa.me/918943015958?text="+msg,"_blank");
 }
-/* ── floating rising letters on hero ── */
-(function(){
-  var hero = document.querySelector('.hero');
-  var chars = ['ع','ك','ف','ث','ر','ج','ن','م','ي','ل','ق','و'];
-  function spawnLetter(){
-    var el = document.createElement('span');
-    el.className = 'rise-letter';
-    el.textContent = chars[Math.floor(Math.random() * chars.length)];
-    var size   = 60  + Math.random() * 160;        // 60–220px
-    var left   = 5   + Math.random() * 90;         // 5–95% across
-    var dur    = 8   + Math.random() * 14;         // 8–22s rise time
-    var delay  = Math.random() * 6;               // stagger start
-    var rot    = -20 + Math.random() * 40;         // -20 to +20deg
-var opac   = 0.03 + Math.random() * 0.04;      // max opacity 0.07
-    el.style.cssText = [
-      'font-size:'       + size  + 'px',
-      'left:'            + left  + '%',
-      '--r:'             + rot   + 'deg',
-      '--o:'             + opac,
-      'animation-duration:'  + dur   + 's',
-      'animation-delay:'     + delay + 's',
-    ].join(';');
-    hero.appendChild(el);
-    // remove after animation completes to keep DOM clean
-    setTimeout(function(){ el.remove(); }, (dur + delay) * 1000);
-  }
-  // spawn 8 immediately, then one every 1.8s
-for(var i=0; i<3; i++) spawnLetter();
-setInterval(spawnLetter, 4000);
-})();
 </script>
 
 </body>
