@@ -615,7 +615,25 @@ footer {
 }
 .kf-btn:hover { opacity:.88; }
 .kf-footer { text-align:center; font-size:11px; color:#444; margin-top:1rem; }
+/* ─── EMBER LETTERS ─── */
+.hero { overflow: hidden; }
 
+@keyframes emberRise {
+  0%   { transform: translateY(0px)   translateX(0px)  rotate(var(--r)); opacity: 0; }
+  10%  { opacity: var(--o); }
+  85%  { opacity: var(--o); }
+  100% { transform: translateY(-85vh) translateX(var(--drift)) rotate(var(--r2)); opacity: 0; }
+}
+.ember {
+  position: absolute;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  color: #b8903a;
+  pointer-events: none;
+  user-select: none;
+  bottom: -5%;
+  z-index: 1;
+  animation: emberRise ease-in-out forwards;
+}
 </style>
 </head>
 <body>
@@ -1070,6 +1088,46 @@ function kfSend(){
     +(why?"*What brings me:* "+encodeURIComponent(why):"");
   window.open("https://wa.me/918943015958?text="+msg,"_blank");
 }
+/* ── ember rising letters ── */
+(function(){
+  var hero  = document.querySelector('.hero');
+  var chars = ['ع','ك','ف','ث','ر','ج','ن','م','ي','ل'];
+
+  function spawnEmber(){
+    var el       = document.createElement('span');
+    el.className = 'ember';
+    el.textContent = chars[Math.floor(Math.random() * chars.length)];
+
+    var size  = 80  + Math.random() * 120;        // 80–200px
+    var left  = 8   + Math.random() * 84;         // 8–92% across
+    var dur   = 12  + Math.random() * 10;         // 12–22s
+    var delay = Math.random() * 3;                // 0–3s stagger
+    var rot   = -15 + Math.random() * 30;         // slight tilt
+    var rot2  = rot + (-8 + Math.random() * 16);  // gentle spin as it rises
+    var drift = (-30 + Math.random() * 60) + 'px';// sway left/right
+    var opac  = 0.04 + Math.random() * 0.05;      // 0.04–0.09 max
+
+    el.style.cssText = [
+      'font-size:'          + size  + 'px',
+      'left:'               + left  + '%',
+      '--r:'                + rot   + 'deg',
+      '--r2:'               + rot2  + 'deg',
+      '--drift:'            + drift,
+      '--o:'                + opac,
+      'animation-duration:' + dur   + 's',
+      'animation-delay:'    + delay + 's',
+    ].join(';');
+
+    hero.appendChild(el);
+    setTimeout(function(){ el.remove(); }, (dur + delay + 1) * 1000);
+  }
+
+  // start with 4 already mid-air, then trickle one every 3.5s
+  for(var i = 0; i < 4; i++){
+    setTimeout(spawnEmber, i * 800);
+  }
+  setInterval(spawnEmber, 3500);
+})();
 </script>
 
 </body>
