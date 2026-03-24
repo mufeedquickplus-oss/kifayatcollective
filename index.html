@@ -96,7 +96,7 @@ nav.on { border-color:var(--line); }
   background:#000;
   min-height:100vh;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
   position:relative;
   overflow:hidden;
 }
@@ -118,11 +118,16 @@ nav.on { border-color:var(--line); }
 /* LEFT */
 .hero-left {
   display:flex; flex-direction:column;
-  justify-content:center;
-  padding:7rem 3rem 5rem 4rem;
-  border-right:1px solid var(--line);
+  justify-content:center; align-items:center;
+  text-align:center;
+  padding:7rem 3rem 5rem 3rem;
   position:relative; z-index:2;
 }
+.hero-gold-rule { margin:1.8rem auto; }
+.hero-tagline { text-align:center; margin-left:auto; margin-right:auto; }
+.hero-btns { justify-content:center; }
+.hero-script-badges { justify-content:center; }
+.hero-scroll { justify-content:center; }
 .hero-eyebrow {
   font-family:var(--J); font-size:10px;
   letter-spacing:.22em; text-transform:uppercase;
@@ -208,7 +213,7 @@ nav.on { border-color:var(--line); }
 .cat:last-child { border-bottom:1px solid var(--line); }
 .cat-header {
   display:flex; align-items:center; justify-content:space-between;
-  padding:1.4rem 0; cursor:none;
+  padding:1.4rem 0; cursor:pointer;
   transition:padding .4s cubic-bezier(.16,1,.3,1);
 }
 .cat.open .cat-header { padding:1.6rem 0 .8rem; }
@@ -242,7 +247,7 @@ nav.on { border-color:var(--line); }
   padding:.55rem 0;
   display:flex; align-items:center; gap:1rem;
   border-bottom:1px solid rgba(184,144,58,.06);
-  text-decoration:none; cursor:none;
+  text-decoration:none; cursor:pointer;
   transition:color .25s, padding-left .25s;
 }
 .cat-item:last-child { border-bottom:none; }
@@ -258,7 +263,66 @@ nav.on { border-color:var(--line); }
   color:var(--dust); margin-top:.15rem; padding-left:1.4rem;
 }
 
-/* ─── DIVIDER ─── */
+/* ─── QUICK NAV ─── */
+.quick-nav {
+  background:#000;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.qn-inner {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.qn-card {
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  padding:2.2rem 2rem 2rem;
+  border-right:1px solid var(--line);
+  text-decoration:none; cursor:pointer;
+  transition:background .35s;
+}
+.qn-card:last-child { border-right:none; }
+.qn-card:hover { background:#07070a; }
+.qn-card::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  opacity:0; transition:opacity .5s;
+  background:radial-gradient(ellipse at 30% 100%, rgba(184,144,58,.07) 0%, transparent 65%);
+}
+.qn-card:hover::before { opacity:1; }
+.qn-num {
+  font-family:var(--J); font-size:.6rem; font-weight:300;
+  letter-spacing:.3em; color:var(--gold); opacity:.6;
+  margin-bottom:.9rem; display:block;
+}
+.qn-glyph {
+  font-family:var(--U); font-size:2.6rem; line-height:1;
+  color:var(--gold); opacity:.18;
+  display:block; margin-bottom:.8rem;
+  transition:opacity .35s, transform .4s;
+}
+.qn-card:hover .qn-glyph { opacity:.35; transform:scale(1.08); }
+.qn-label {
+  font-family:var(--G); font-size:1.15rem; font-weight:400;
+  color:var(--cream); letter-spacing:.01em;
+  display:block; margin-bottom:.35rem;
+  transition:color .3s;
+}
+.qn-card:hover .qn-label { color:var(--gold2); }
+.qn-desc {
+  font-family:var(--J); font-size:.72rem; font-weight:300;
+  color:var(--dust); line-height:1.6;
+  display:block; flex:1;
+}
+.qn-arrow {
+  font-family:var(--J); font-size:.75rem;
+  color:var(--gold); opacity:0;
+  margin-top:1.2rem; display:block;
+  transition:opacity .3s, transform .3s;
+  transform:translateX(-6px);
+}
+.qn-card:hover .qn-arrow { opacity:1; transform:translateX(0); }
+
+
 .divider {
   background:#000;
   display:flex; align-items:center; gap:1.5rem;
@@ -291,7 +355,7 @@ nav.on { border-color:var(--line); }
   border:1px solid var(--line); background:transparent;
   color:var(--dust); font-size:.9rem;
   display:flex; align-items:center; justify-content:center;
-  cursor:none; transition:border-color .25s, color .25s;
+  cursor:pointer; transition:border-color .25s, color .25s;
 }
 .m-nav-btn:hover { border-color:var(--gold); color:var(--gold); }
 .m-counter {
@@ -412,7 +476,7 @@ nav.on { border-color:var(--line); }
   letter-spacing:.18em; text-transform:uppercase;
   color:var(--gold); text-decoration:none;
   border-bottom:1px solid rgba(184,144,58,.28); padding-bottom:.28rem;
-  transition:gap .3s, border-color .3s;
+  transition:gap .3s, border-color .3s; cursor:pointer;
 }
 .comm-cta:hover { gap:1rem; border-color:var(--gold); }
 
@@ -437,10 +501,13 @@ nav.on { border-color:var(--line); }
 .offers-grid {
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-  gap:1px; background:rgba(184,144,58,.1);
+  gap:0;
 }
-/* offers accordion overrides */
-.offers-grid .cat { background:#050505; }
+/* Internal dividers only: right border on col1, bottom border on row1 */
+.offers-grid .cat { background:#050505; border:none; }
+.offers-grid .cat:nth-child(odd)  { border-right:1px solid var(--line); }
+.offers-grid .cat:nth-child(1),
+.offers-grid .cat:nth-child(2)    { border-bottom:1px solid var(--line); }
 .offers-grid .cat-header { padding:1.4rem 1.4rem; cursor:pointer; }
 .offers-grid .cat.open .cat-header { padding:1.6rem 1.4rem .8rem; }
 .offers-grid .cat-items { padding:.4rem 1.4rem 1.8rem; }
@@ -476,8 +543,9 @@ nav.on { border-color:var(--line); }
 .btn {
   font-family:var(--J); font-size:.72rem; font-weight:300;
   letter-spacing:.18em; text-transform:uppercase;
-  text-decoration:none; cursor:none;
+  text-decoration:none; cursor:pointer;
   padding:.85rem 2rem; display:inline-block; transition:all .28s;
+  position:relative; z-index:10;
 }
 .btn-fill  { background:var(--gold); color:#000; }
 .btn-fill:hover  { background:var(--gold2); }
@@ -525,7 +593,10 @@ footer {
   color:rgba(168,152,128,.55);
 }
 
-/* ─── SCROLL REVEAL ─── */
+/* ─── SCROLL TARGETS ─── */
+#manifesto, #community, #artists, #events, #offers, #quick-nav {
+  scroll-margin-top: 56px;
+}
 .sr { opacity:0; transform:translateY(22px); transition:opacity .9s ease, transform .9s ease; }
 .sr.in { opacity:1; transform:translateY(0); }
 .d1 { transition-delay:.1s; }
@@ -542,18 +613,14 @@ footer {
 
   .hero { grid-template-columns:1fr; min-height:auto; }
   .hero-left {
-    border-right:none; border-bottom:1px solid var(--line);
     padding:7rem 1.6rem 4rem;
-    align-items:center; text-align:center;
   }
   .hero-heading { font-size:clamp(38px, 10vw, 52px); }
-  .hero-gold-rule { margin:1.4rem auto; }
-  .hero-tagline { text-align:center; }
-  .hero-btns { justify-content:center; flex-direction:column; align-items:center; }
-  .hero-btns .btn { width:100%; text-align:center; }
-  .hero-script-badges { justify-content:center; }
-  .hero-scroll { justify-content:center; }
-  .hero-right { display:none; }
+
+  .qn-inner { grid-template-columns:1fr 1fr; }
+  .qn-card:nth-child(2) { border-right:none; }
+  .qn-card:nth-child(3) { border-right:1px solid var(--line); border-top:1px solid var(--line); }
+  .qn-card:nth-child(4) { border-top:1px solid var(--line); border-right:none; }
 
   .manifesto { padding:4rem 0; }
   .m-header { padding:0 1.4rem; }
@@ -566,6 +633,8 @@ footer {
 
   .offers { padding:4rem 1.4rem; }
   .offers-grid { grid-template-columns:1fr; }
+  .offers-grid .cat { border-right:none; border-bottom:1px solid var(--line); }
+  .offers-grid .cat:last-child { border-bottom:none; }
   .offers-grid .cat-header { padding:1.4rem 0; }
   .offers-grid .cat.open .cat-header { padding:1.6rem 0 .8rem; }
   .offers-grid .cat-items { padding:.4rem 0 1.8rem; }
@@ -662,7 +731,7 @@ footer {
     </p>
     <div class="hero-btns">
       <a href="#closing" class="btn btn-fill" onclick="document.getElementById('kfModal').classList.add('active');return false;">Join the Collective</a>
-      <a href="#community" class="btn btn-ghost">Explore the Work</a>
+      <a href="#quick-nav" class="btn btn-ghost">Explore With Us</a>
     </div>
     <div class="hero-script-badges">
       <span class="hero-script-badge">Malayalam</span>
@@ -675,78 +744,39 @@ footer {
       <div class="hero-scroll-line"></div>
     </div>
   </div>
+</section>
 
-  <!-- RIGHT - What We Offer preview -->
-  <div class="hero-right">
-    <p class="categories-label">What We Offer</p>
-
-    <div class="cat" id="cat-decor">
-      <div class="cat-header" onclick="toggle('cat-decor')">
-        <span class="cat-title">Décor</span>
-        <span class="cat-arrow">+</span>
-      </div>
-      <div class="cat-body">
-        <div class="cat-body-inner">
-          <div class="cat-items">
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Canvases <span class="cat-sub">· Frame optional</span></span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Wall Art <span class="cat-sub">· Metallic · Sticker · Wooden · Paint</span></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cat" id="cat-products">
-      <div class="cat-header" onclick="toggle('cat-products')">
-        <span class="cat-title">Products</span>
-        <span class="cat-arrow">+</span>
-      </div>
-      <div class="cat-body">
-        <div class="cat-body-inner">
-          <div class="cat-items">
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Wooden Boat</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Paper Box</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>T-Shirts</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Tote Bag</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Customizable Corporate Gifts</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cat" id="cat-tools">
-      <div class="cat-header" onclick="toggle('cat-tools')">
-        <span class="cat-title">Tools</span>
-        <span class="cat-arrow">+</span>
-      </div>
-      <div class="cat-body">
-        <div class="cat-body-inner">
-          <div class="cat-items">
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Beginner's Kit</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Canvas</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Accessories</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cat" id="cat-infra">
-      <div class="cat-header" onclick="toggle('cat-infra')">
-        <span class="cat-title">Infrastructure</span>
-        <span class="cat-arrow">+</span>
-      </div>
-      <div class="cat-body">
-        <div class="cat-body-inner">
-          <div class="cat-items">
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>School</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Workspace</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Artist Corner</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Exhibitions</span></a>
-            <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Workshops</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<!-- ══ QUICK NAV ══ -->
+<section class="quick-nav" id="quick-nav">
+  <div class="qn-inner">
+    <a href="#manifesto" class="qn-card">
+      <span class="qn-num">01</span>
+      <span class="qn-glyph">ث</span>
+      <span class="qn-label">The Collective</span>
+      <span class="qn-desc">Our manifesto & who we are</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#artists" class="qn-card">
+      <span class="qn-num">02</span>
+      <span class="qn-glyph">ع</span>
+      <span class="qn-label">The Artists</span>
+      <span class="qn-desc">Stories behind the stroke</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#events" class="qn-card">
+      <span class="qn-num">03</span>
+      <span class="qn-glyph">ر</span>
+      <span class="qn-label">Events & Gatherings</span>
+      <span class="qn-desc">Where art comes alive</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#offers" class="qn-card">
+      <span class="qn-num">04</span>
+      <span class="qn-glyph">ف</span>
+      <span class="qn-label">What We Offer</span>
+      <span class="qn-desc">Crafted with intention</span>
+      <span class="qn-arrow">→</span>
+    </a>
   </div>
 </section>
 
@@ -798,7 +828,7 @@ footer {
 
 <!-- ══ COMMUNITY ══ -->
 <section class="community" id="community">
-  <div class="comm-half">
+  <div class="comm-half" id="artists">
     <div class="comm-bg-num">I</div>
     <div class="comm-glyph">ع</div>
     <div class="comm-inner">
@@ -814,7 +844,7 @@ footer {
       <a href="#" class="comm-cta">Meet the Artists &nbsp;→</a>
     </div>
   </div>
-  <div class="comm-half">
+  <div class="comm-half" id="events">
     <div class="comm-bg-num">II</div>
     <div class="comm-glyph">ر</div>
     <div class="comm-inner">
@@ -890,7 +920,7 @@ footer {
 
       <div class="cat" id="cat-infra2">
         <div class="cat-header" onclick="toggle('cat-infra2')">
-          <span class="cat-title">Infrastructure</span>
+          <span class="cat-title">The Studio</span>
           <span class="cat-arrow">+</span>
         </div>
         <div class="cat-body">
@@ -916,7 +946,7 @@ footer {
   <p class="closing-sub sr d1">Whether you create, collect, learn, or simply feel - Kifayat is a place to belong.</p>
   <div class="closing-btns sr d2">
     <a href="#" class="btn btn-fill" onclick="document.getElementById('kfModal').classList.add('active');return false;">Join the Collective</a>
-    <a href="#" class="btn btn-ghost">Explore the Work</a>
+    <a href="#" class="btn btn-ghost" onclick="document.getElementById('writeModal').classList.add('active');return false;">Write to Us</a>
   </div>
 </section>
 
@@ -934,7 +964,7 @@ footer {
       <a href="#">Décor</a>
       <a href="#">Products</a>
       <a href="#">Tools</a>
-      <a href="#">Infrastructure</a>
+      <a href="#">The Studio</a>
     </div>
   </div>
   <div class="f-col">
@@ -1002,8 +1032,72 @@ footer {
   </div>
 </div>
 
+<!-- ══ WRITE TO US POPUP ══ -->
+<div class="kf-overlay" id="writeModal">
+  <div class="kf-popup">
+    <button class="kf-close" onclick="document.getElementById('writeModal').classList.remove('active')">&#x2715;</button>
+    <div class="kf-logo-area">
+      <img src="/logo.png" alt="Kifayat Collective" onerror="this.style.display='none';document.getElementById('wr-fb').style.display='block'">
+      <div id="wr-fb" style="display:none;font-family:'EB Garamond',serif;font-size:28px;color:#c8922a;">kifayat</div>
+    </div>
+    <p class="kf-title">Write to Us</p>
+    <p class="kf-sub">We'd love to hear from you.<br>Fill in what you're comfortable sharing.</p>
+    <div class="kf-field">
+      <label class="kf-label">Your name <span style="color:#444;font-size:10px;">(optional)</span></label>
+      <input class="kf-input" id="wr-name" type="text" placeholder="e.g. Layla Hassan" />
+    </div>
+    <div class="kf-row">
+      <div class="kf-field">
+        <label class="kf-label">Email <span style="color:#444;font-size:10px;">(optional)</span></label>
+        <input class="kf-input" id="wr-email" type="email" placeholder="you@email.com" />
+      </div>
+      <div class="kf-field">
+        <label class="kf-label">Contact no. <span style="color:#444;font-size:10px;">(optional)</span></label>
+        <input class="kf-input" id="wr-phone" type="tel" placeholder="+971 ..." />
+      </div>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">Your message</label>
+      <textarea class="kf-input" id="wr-msg" rows="4" placeholder="Tell us what's on your mind..." style="resize:vertical;font-family:inherit;line-height:1.6;"></textarea>
+    </div>
+    <button class="kf-btn" onclick="wrSend()">Send Message &rarr;</button>
+    <p class="kf-footer">This will open your email client addressed to us</p>
+  </div>
+</div>
+
 <script>
-/* ── cursor ── */
+/* ── write to us ── */
+function wrSend(){
+  var name  = document.getElementById('wr-name').value.trim();
+  var email = document.getElementById('wr-email').value.trim();
+  var phone = document.getElementById('wr-phone').value.trim();
+  var msg   = document.getElementById('wr-msg').value.trim();
+  if(!msg){ alert('Please write a message before sending.'); return; }
+  var body = '';
+  if(name)  body += 'Name: ' + name + '\n';
+  if(email) body += 'Email: ' + email + '\n';
+  if(phone) body += 'Contact: ' + phone + '\n';
+  body += '\n' + msg;
+  var subject = encodeURIComponent('Message from Kifayat Collective Website');
+  var bodyEnc = encodeURIComponent(body);
+  window.location.href = 'mailto:kifayat.calli@gmail.com?subject=' + subject + '&body=' + bodyEnc;
+}
+
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const id = this.getAttribute('href').slice(1);
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const navH = 56;
+    const top = target.getBoundingClientRect().top + window.scrollY - navH;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+
+
 const cd=document.getElementById('cd'), cr=document.getElementById('cr');
 let mx=0, my=0, rx=0, ry=0;
 document.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; cd.style.left=mx+'px'; cd.style.top=my+'px'; });
