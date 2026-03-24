@@ -91,6 +91,72 @@ nav.on { border-color:var(--line); }
 }
 .n-pill:hover { background:var(--gold) !important; color:#000 !important; }
 
+/* ─── NAV DROPDOWNS ─── */
+.n-drop { position:relative; }
+.n-drop-trigger {
+  display:flex; align-items:center; gap:.35rem; cursor:pointer;
+}
+.n-caret {
+  font-size:.55rem; opacity:.6;
+  transition:transform .25s;
+  display:inline-block;
+}
+.n-drop:hover .n-caret { transform:rotate(180deg); }
+.n-dropdown {
+  position:absolute; top:calc(100% + 14px); left:50%;
+  transform:translateX(-50%);
+  background:#080808;
+  border:1px solid var(--line);
+  min-width:180px;
+  padding:.5rem 0;
+  opacity:0; pointer-events:none;
+  transform:translateX(-50%) translateY(-6px);
+  transition:opacity .22s, transform .22s;
+  z-index:600;
+}
+.n-drop:hover .n-dropdown {
+  opacity:1; pointer-events:all;
+  transform:translateX(-50%) translateY(0);
+}
+.n-dd-item {
+  display:block;
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--dust2); text-decoration:none;
+  padding:.65rem 1.2rem;
+  transition:color .2s, padding-left .2s, background .2s;
+}
+.n-dd-item:hover {
+  color:var(--gold);
+  background:rgba(184,144,58,.05);
+  padding-left:1.6rem;
+}
+
+/* ─── COMING SOON TOAST ─── */
+#cs-toast {
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(20px);
+  background:#0d0d0d; border:1px solid var(--line);
+  padding:1.1rem 2rem 1rem;
+  text-align:center;
+  opacity:0; pointer-events:none;
+  transition:opacity .35s, transform .35s;
+  z-index:9999; min-width:260px;
+}
+#cs-toast.show {
+  opacity:1; transform:translateX(-50%) translateY(0);
+}
+.cs-emoji { font-size:1.3rem; display:block; margin-bottom:.4rem; }
+.cs-line1 {
+  font-family:var(--G); font-size:1rem; font-style:italic;
+  color:var(--cream); display:block; margin-bottom:.2rem;
+}
+.cs-line2 {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.1em; color:var(--dust);
+}
+
+
+
 /* ─── HERO ─── */
 .hero {
   background:#000;
@@ -500,16 +566,16 @@ nav.on { border-color:var(--line); }
 .offers-heading em { color:var(--gold); font-style:italic; }
 .offers-grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  grid-template-columns:1fr 1fr;
   gap:0;
 }
-/* Internal dividers only: right border on col1, bottom border on row1 */
+/* Clean internal cross: vertical between col1/col2, horizontal between row1/row2 */
 .offers-grid .cat { background:#050505; border:none; }
 .offers-grid .cat:nth-child(odd)  { border-right:1px solid var(--line); }
 .offers-grid .cat:nth-child(1),
 .offers-grid .cat:nth-child(2)    { border-bottom:1px solid var(--line); }
-.offers-grid .cat-header { padding:1.4rem 1.4rem; cursor:pointer; }
-.offers-grid .cat.open .cat-header { padding:1.6rem 1.4rem .8rem; }
+.offers-grid .cat-header { padding:1.6rem 1.4rem; cursor:pointer; }
+.offers-grid .cat.open .cat-header { padding:1.8rem 1.4rem .8rem; }
 .offers-grid .cat-items { padding:.4rem 1.4rem 1.8rem; }
 
 /* ─── CLOSING ─── */
@@ -555,42 +621,37 @@ nav.on { border-color:var(--line); }
 /* ─── FOOTER ─── */
 footer {
   background:#000; border-top:1px solid var(--line);
-  padding:4rem 2.8rem 2.5rem;
-  display:grid; grid-template-columns:1.8fr 1fr 1fr; gap:3rem;
+  padding:3.5rem 2.8rem 2rem;
+  display:flex; flex-direction:column; align-items:center; gap:1.4rem;
 }
-.f-brand { display:flex; flex-direction:column; gap:1.2rem; }
 .f-tag {
-  font-family:var(--G); font-size:1rem; font-style:italic;
-  color:var(--dust2); line-height:1.65;
+  font-family:var(--G); font-size:1.1rem; font-style:italic;
+  color:var(--dust2); line-height:1.7; text-align:center;
 }
-.f-social { display:flex; gap:.6rem; }
+.f-tag strong {
+  font-style:normal; font-weight:500; color:var(--gold2);
+}
+.f-social { display:flex; gap:.8rem; align-items:center; }
 .f-social a {
-  width:32px; height:32px; border-radius:50%;
+  width:36px; height:36px; border-radius:50%;
   border:1px solid var(--line);
   display:flex; align-items:center; justify-content:center;
-  font-family:var(--J); font-size:.65rem; font-weight:300;
-  color:var(--dust); text-decoration:none;
-  transition:border-color .25s, color .25s;
+  text-decoration:none;
+  transition:border-color .25s, background .25s;
 }
-.f-social a:hover { border-color:var(--gold); color:var(--gold); }
-.f-col-label {
-  font-family:var(--J); font-size:.66rem; font-weight:300;
-  letter-spacing:.3em; text-transform:uppercase;
-  color:var(--gold); opacity:.85; display:block; margin-bottom:1.1rem;
-}
-.f-col-links { display:flex; flex-direction:column; gap:.65rem; }
-.f-col-links a {
-  font-family:var(--G); font-size:1rem; font-style:italic;
-  color:var(--dust2); text-decoration:none; transition:color .25s;
-}
-.f-col-links a:hover { color:var(--cream); }
+.f-social a:hover { border-color:var(--gold); background:rgba(184,144,58,.07); }
+.f-social a svg { width:15px; height:15px; fill:var(--dust); transition:fill .25s; }
+.f-social a:hover svg { fill:var(--gold); }
 .f-bottom {
-  grid-column:1/-1; border-top:1px solid var(--line);
-  padding-top:1.6rem; margin-top:.5rem;
-  display:flex; justify-content:space-between;
-  font-family:var(--J); font-size:.62rem; font-weight:300;
+  border-top:1px solid var(--line);
+  padding-top:1.4rem; width:100%;
+  display:flex; justify-content:center;
+  font-family:var(--J); font-size:.6rem; font-weight:300;
   letter-spacing:.16em; text-transform:uppercase;
-  color:rgba(168,152,128,.55);
+  color:rgba(168,152,128,.45);
+}
+@media(max-width:860px){
+  footer { padding:2.5rem 1.4rem 1.5rem; }
 }
 
 /* ─── SCROLL TARGETS ─── */
@@ -633,17 +694,13 @@ footer {
 
   .offers { padding:4rem 1.4rem; }
   .offers-grid { grid-template-columns:1fr; }
-  .offers-grid .cat { border-right:none; border-bottom:1px solid var(--line); }
-  .offers-grid .cat:last-child { border-bottom:none; }
+  .offers-grid .cat { border-right:none !important; border-bottom:1px solid var(--line) !important; }
+  .offers-grid .cat:last-child { border-bottom:none !important; }
   .offers-grid .cat-header { padding:1.4rem 0; }
   .offers-grid .cat.open .cat-header { padding:1.6rem 0 .8rem; }
   .offers-grid .cat-items { padding:.4rem 0 1.8rem; }
 
   .closing { padding:6rem 1.4rem; }
-
-  footer { grid-template-columns:1fr 1fr; padding:3rem 1.4rem; }
-  .f-brand { grid-column:1/-1; }
-  .f-bottom { flex-direction:column; gap:.7rem; }
 }
 
 /* ─── JOIN US POPUP ─── */
@@ -709,10 +766,41 @@ footer {
     <img src="/logo.png" alt="Kifayat" class="n-logo-img" onerror="this.style.display='none'">
   </a>
   <ul class="n-links">
-    <li><a href="#manifesto">The Collective</a></li>
-    <li><a href="#community">Community</a></li>
-    <li><a href="#offers">What We Offer</a></li>
-    <li><a href="#" class="n-pill" onclick="document.getElementById('kfModal').classList.add('active');return false;">Sign in</a></li>
+    <li class="n-drop">
+      <a href="#manifesto" class="n-drop-trigger">The Collective <span class="n-caret">▾</span></a>
+      <div class="n-dropdown">
+        <a href="#manifesto" class="n-dd-item">Manifesto</a>
+        <a href="#manifesto" class="n-dd-item">About Us</a>
+      </div>
+    </li>
+    <li class="n-drop">
+      <a href="#artists" class="n-drop-trigger">The Artists <span class="n-caret">▾</span></a>
+      <div class="n-dropdown">
+        <a href="#artists" class="n-dd-item">Artist Profiles</a>
+        <a href="#artists" class="n-dd-item">Portfolios</a>
+        <a href="#artists" class="n-dd-item">Support an Artist</a>
+        <a href="#artists" class="n-dd-item">Campus Chapters</a>
+      </div>
+    </li>
+    <li class="n-drop">
+      <a href="#events" class="n-drop-trigger">Events <span class="n-caret">▾</span></a>
+      <div class="n-dropdown">
+        <a href="#events" class="n-dd-item">Exhibitions</a>
+        <a href="#events" class="n-dd-item">Flea Markets</a>
+        <a href="#events" class="n-dd-item">Workshops</a>
+        <a href="#events" class="n-dd-item">Gatherings</a>
+      </div>
+    </li>
+    <li class="n-drop">
+      <a href="#offers" class="n-drop-trigger">What We Offer <span class="n-caret">▾</span></a>
+      <div class="n-dropdown">
+        <a href="#offers" class="n-dd-item">Décor</a>
+        <a href="#offers" class="n-dd-item">Products</a>
+        <a href="#offers" class="n-dd-item">Tools</a>
+        <a href="#offers" class="n-dd-item">The Studio</a>
+      </div>
+    </li>
+    <li><a href="#" class="n-pill" onclick="showComingSoon();return false;">Sign in</a></li>
   </ul>
 </nav>
 
@@ -952,33 +1040,19 @@ footer {
 
 <!-- ══ FOOTER ══ -->
 <footer>
-  <div class="f-brand">
-    <p class="f-tag">Where every stroke tells a story.<br/>Art. Community. Culture.</p>
-    <div class="f-social">
-      <a href="https://www.instagram.com/kifayat.collective" target="_blank" title="Instagram">ig</a>
-    </div>
-  </div>
-  <div class="f-col">
-    <span class="f-col-label">The Work</span>
-    <div class="f-col-links">
-      <a href="#">Décor</a>
-      <a href="#">Products</a>
-      <a href="#">Tools</a>
-      <a href="#">The Studio</a>
-    </div>
-  </div>
-  <div class="f-col">
-    <span class="f-col-label">The Collective</span>
-    <div class="f-col-links">
-      <a href="#">Artist Profiles</a>
-      <a href="#">Events & Exhibitions</a>
-      <a href="#">Campus Chapters</a>
-      <a href="#">Join Us</a>
-    </div>
+  <p class="f-tag">Where every stroke tells a story.<br/><strong>Art · Community · Culture</strong></p>
+  <div class="f-social">
+    <!-- WhatsApp -->
+    <a href="https://chat.whatsapp.com/ICz1wSqz5y0Eh0KULi1uhY?mode=gi_t" target="_blank" title="Join our WhatsApp group">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/kifayat.collective" target="_blank" title="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
   </div>
   <div class="f-bottom">
     <span>© 2024 Kifayat Calligraphy Collective</span>
-    <span>Art · Community · Culture</span>
   </div>
 </footer>
 
@@ -1065,8 +1139,23 @@ footer {
   </div>
 </div>
 
+<!-- ══ COMING SOON TOAST ══ -->
+<div id="cs-toast">
+  <span class="cs-emoji">✦</span>
+  <span class="cs-line1">we're still setting the ink to dry.</span>
+  <span class="cs-line2">sign-in will be ready soon — thank you for waiting with us</span>
+</div>
+
 <script>
-/* ── write to us ── */
+/* ── coming soon toast ── */
+function showComingSoon(){
+  const t = document.getElementById('cs-toast');
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>t.classList.remove('show'), 3800);
+}
+
+/* ── cursor ── */
 function wrSend(){
   var name  = document.getElementById('wr-name').value.trim();
   var email = document.getElementById('wr-email').value.trim();
