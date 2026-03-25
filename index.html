@@ -1,469 +1,1248 @@
 <!DOCTYPE html>
-<html lang="en" style="color-scheme: only light;">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sukoon Academy — Online Quran Classes for Kids & Adults | UAE & India</title>
-<meta name="google-site-verification" content="oeDAOlvu25__ADyD1FVkRcAI4ldXDEaYV61NWYHeIZQ"/>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231B4D3E'/><text y='.9em' font-size='80' x='50%' text-anchor='middle' fill='%23C9A84C' font-family='serif'>ْ</text></svg>"/>
-<meta name="description" content="Learn to recite the Quran beautifully with applied tajweed. Small groups of 4 students, real teachers, daily WhatsApp follow-up. Online Quran classes for kids and adults in UAE, Kerala and GCC. From AED 50 per month."/>
-<meta name="keywords" content="online Quran classes UAE, Quran classes Dubai, tajweed for kids, Quran classes Kerala, learn Quran online, online Quran school"/>
-<meta name="author" content="Sukoon Academy"/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://sukoonquran.netlify.app/"/>
-<meta property="og:title" content="Sukoon Academy — Online Quran Classes for Kids and Adults"/>
-<meta property="og:description" content="Real teachers. Small groups. Applied tajweed that actually sticks. From AED 50/month."/>
-<meta property="og:url" content="https://sukoonquran.netlify.app/"/>
-<meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary"/>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Sukoon Academy","url":"https://sukoonquran.netlify.app/","areaServed":["UAE","India","Saudi Arabia","Qatar","Kuwait","Bahrain","Oman"],"teaches":"Quran recitation with applied tajweed","availableLanguage":["English","Malayalam","Hindi"],"offers":[{"@type":"Offer","name":"Children Quran Classes","price":"50","priceCurrency":"AED"},{"@type":"Offer","name":"Adult Quran Classes","price":"80","priceCurrency":"AED"}]}
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<meta name="theme-color" content="#000000"/>
+<title>Kifayat - Where Every Stroke Tells a Story</title>
+<meta name="description" content="Kifayat Collective - A calligraphy and art studio where every stroke tells a story. Explore handcrafted lettering, custom artwork and more.">
+<meta name="keywords" content="kifayat, calligraphy, art, lettering, handcrafted, custom artwork, kifayat collective">
+<meta name="author" content="Kifayat Collective">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="canonical" href="https://kifayatcollective.com/">
+<meta property="og:title" content="Kifayat Collective">
+<meta property="og:description" content="Where Every Stroke Tells a Story">
+<meta property="og:image" content="https://kifayatcollective.com/logo.png">
+<meta property="og:url" content="https://kifayatcollective.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kifayat Collective">
+<meta name="twitter:description" content="Where Every Stroke Tells a Story">
+<meta name="twitter:image" content="https://kifayatcollective.com/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@200;300;400;500&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Malayalam:wght@300;400&display=swap" rel="stylesheet"/>
 <style>
-:root{--teal:#1B4D3E;--teal-mid:#2A6B56;--teal-light:#E8F3EF;--teal-pale:#F0F7F4;--gold:#C9A84C;--gold-light:#F5EDD4;--cream:#FAF7F2;--cream-dark:#F0EBE1;--charcoal:#2C2C2A;--muted:#6B6860;--white:#FFFFFF;--border:rgba(27,77,62,0.1);--shadow-sm:0 2px 12px rgba(27,77,62,0.06);--shadow:0 4px 20px rgba(27,77,62,0.08);--shadow-lg:0 12px 40px rgba(27,77,62,0.13);--r:20px;--rs:12px}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;color-scheme:light only}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
-.page{display:none;min-height:100vh}.page.active{display:block}
-.dash-page{display:none;min-height:100vh}.dash-page.active{display:flex}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border-radius:100px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;border:none;cursor:pointer;transition:all .2s;text-decoration:none}
-.btn-primary{background:var(--teal);color:var(--white)}.btn-primary:hover{background:var(--teal-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(27,77,62,0.2)}
-.btn-secondary{background:transparent;color:var(--teal);border:1.5px solid rgba(27,77,62,0.25)}.btn-secondary:hover{border-color:var(--teal);background:var(--teal-light)}
-.btn-ghost{background:transparent;color:var(--muted);border:1.5px solid var(--border)}.btn-ghost:hover{color:var(--charcoal)}
-.btn-sm{padding:8px 16px;font-size:13px;border-radius:var(--rs)}
-.btn-danger{background:#FEE8E8;color:#C0392B;border:none}.btn-danger:hover{background:#FDDCDC}
-.btn:disabled{opacity:.65;cursor:not-allowed;transform:none!important;box-shadow:none!important}
-.badge{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:100px}
-.bg{background:#E6F4EE;color:#1B7A4A}.bgold{background:var(--gold-light);color:#8B6914}.bteal{background:var(--teal-light);color:var(--teal)}.bred{background:#FEE8E8;color:#C0392B}.bgrey{background:#F0EFED;color:var(--muted)}
-.card{background:var(--white);border-radius:var(--r);padding:28px;border:1px solid var(--border);box-shadow:var(--shadow-sm)}
-.card-title{font-family:'Lora',serif;font-size:17px;font-weight:600;color:var(--charcoal)}.card-title em{font-style:italic;color:var(--teal)}
-input,select,textarea{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--rs);font-size:14px;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);outline:none;transition:border-color .2s,box-shadow .2s}
-input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(27,77,62,.08)}
-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B6860' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
-label{display:block;font-size:13px;font-weight:500;color:var(--charcoal);margin-bottom:6px}
-.fg{margin-bottom:18px}.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.empty-state{text-align:center;padding:48px 24px;color:var(--muted);font-size:14px;font-weight:300;line-height:1.7}
-.empty-state-icon{font-size:36px;margin-bottom:12px;opacity:.4}
-.empty-state-title{font-family:'Lora',serif;font-size:16px;font-weight:600;color:var(--charcoal);margin-bottom:6px;opacity:.5}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--charcoal);color:var(--white);padding:13px 24px;border-radius:100px;font-size:13px;font-weight:500;z-index:9999;transition:transform .3s;box-shadow:var(--shadow-lg);white-space:nowrap}
-.toast.show{transform:translateX(-50%) translateY(0)}.toast.success{background:var(--teal)}.toast.error{background:#C0392B}
-.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block;flex-shrink:0}
-/* SITE NAV */
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px}
-.nav-logo{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--teal)}.nav-logo span{color:var(--gold)}
-.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{text-decoration:none;font-size:14px;color:var(--muted);transition:color .2s;cursor:pointer}.nav-links a:hover{color:var(--teal)}
-.nav-right{display:flex;gap:10px;align-items:center}
-.nav-login{background:transparent;color:var(--teal);border:1.5px solid rgba(27,77,62,.25);padding:9px 20px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}.nav-login:hover{border-color:var(--teal);background:var(--teal-light)}
-.nav-cta{background:var(--teal);color:var(--white);border:none;padding:10px 22px;border-radius:100px;font-size:14px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}.nav-cta:hover{background:var(--teal-mid);transform:translateY(-1px)}
-/* HERO */
-.hero{min-height:100vh;padding:120px 5% 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;overflow:hidden;background:var(--cream)}
-.arabic-bg{position:absolute;pointer-events:none;font-family:'Lora',serif;line-height:1;color:rgba(27,77,62,.04);user-select:none;z-index:0}
-.arabic-bg-gold{position:absolute;pointer-events:none;font-family:'Lora',serif;line-height:1;color:rgba(201,168,76,.06);user-select:none;z-index:0}
-.hero-text{position:relative;z-index:1;animation:fadeUp .7s ease both}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold-light);border:1px solid rgba(201,168,76,.3);padding:6px 14px;border-radius:100px;font-size:12px;font-weight:500;color:#8B6914;margin-bottom:24px}
-.hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%}
-.hero h1{font-family:'Lora',serif;font-size:clamp(36px,5vw,58px);font-weight:600;line-height:1.15;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.5px}
-.hero h1 em{font-style:italic;color:var(--teal)}
-.hero-desc{font-size:17px;line-height:1.7;color:var(--muted);margin-bottom:36px;max-width:480px;font-weight:300}
-.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
-.hero-visual{display:grid;grid-template-columns:1fr 1fr;gap:14px;animation:fadeUp .7s ease .15s both}
-.hero-card{position:relative;z-index:1;background:var(--white);border-radius:var(--r);padding:24px;border:1px solid var(--border);box-shadow:var(--shadow)}
-.hero-card.tall{grid-row:span 2;background:var(--teal);color:var(--white);display:flex;flex-direction:column;justify-content:flex-end}
-.hcn{font-family:'Lora',serif;font-size:36px;font-weight:600;color:var(--teal);line-height:1;margin-bottom:4px}.hero-card.tall .hcn{color:var(--gold)}
-.hcl{font-size:13px;color:var(--muted)}.hero-card.tall .hcl{color:rgba(255,255,255,.6)}
-.hcbt{font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--white);line-height:1.3;margin-bottom:8px}
-.sukoon-mark{font-size:64px;color:rgba(201,168,76,.4);line-height:1;margin-bottom:16px}
-/* STATS */
-.stats-bar{background:var(--teal);padding:32px 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
-.stn{font-family:'Lora',serif;font-size:32px;font-weight:600;color:var(--gold)}.stt{font-size:13px;color:rgba(255,255,255,.7);margin-top:4px}
-/* ACCORDION */
-.accordion-wrap{background:var(--white);position:relative;overflow:hidden}
-.accordion-item{border-bottom:1px solid var(--border)}.accordion-item:last-child{border-bottom:none}
-.accordion-trigger{width:100%;padding:28px 5%;display:flex;align-items:center;justify-content:space-between;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;text-align:left;transition:background .2s}
-.accordion-trigger:hover,.accordion-trigger.open{background:rgba(27,77,62,.02)}
-.acc-left{display:flex;align-items:center;gap:16px}
-.acc-tag{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:var(--gold-light);padding:4px 12px;border-radius:100px;white-space:nowrap}
-.acc-title{font-family:'Lora',serif;font-size:clamp(18px,3vw,26px);font-weight:600;color:var(--charcoal)}.acc-title em{font-style:italic;color:var(--teal)}
-.acc-icon{width:36px;height:36px;border-radius:50%;background:var(--teal-light);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;transition:transform .3s,background .2s}
-.accordion-trigger.open .acc-icon{transform:rotate(45deg);background:var(--teal);color:var(--white)}
-.accordion-body{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1);padding:0 5%}
-.accordion-body.open{max-height:3000px;padding:0 5% 48px}
-/* STEPS */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:32px}
-.step-card{background:var(--cream);border-radius:var(--r);padding:32px 24px;border:1px solid var(--border);transition:transform .2s,box-shadow .2s}.step-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.step-num{width:40px;height:40px;border-radius:50%;background:var(--gold-light);color:#8B6914;font-family:'Lora',serif;font-size:18px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-.step-card h3{font-family:'Lora',serif;font-size:18px;font-weight:600;margin-bottom:10px}.step-card p{font-size:14px;color:var(--muted);line-height:1.6;font-weight:300}
-/* LEVELS */
-.levels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:32px}
-.level-card{border-radius:var(--r);padding:28px;border:1px solid var(--border);background:var(--white);transition:transform .2s,box-shadow .2s}.level-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.level-card.featured{background:var(--teal);border-color:var(--teal)}
-.level-num-badge{display:inline-block;font-size:11px;font-weight:500;padding:4px 12px;border-radius:100px;background:var(--teal-light);color:var(--teal);margin-bottom:14px}
-.level-card.featured .level-num-badge{background:rgba(201,168,76,.3);color:var(--gold)}
-.level-card h3{font-family:'Lora',serif;font-size:20px;font-weight:600;margin-bottom:4px}.level-card.featured h3{color:var(--white)}
-.level-arabic{font-size:14px;color:#B07D20;margin-bottom:12px;font-family:'Lora',serif;font-weight:500}.level-card.featured .level-arabic{color:rgba(201,168,76,.8)}
-.level-card p{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:16px}.level-card.featured p{color:rgba(255,255,255,.8)}
-.level-tags{display:flex;flex-wrap:wrap;gap:6px}
-.level-tag{font-size:11px;padding:3px 10px;border-radius:100px;background:var(--cream-dark);color:var(--muted);border:1px solid var(--border);font-weight:500}.level-card.featured .level-tag{background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.15)}
-/* PRICING */
-.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:680px;margin:32px auto 0}
-.price-card{background:var(--cream);border-radius:24px;padding:36px 32px;border:1px solid var(--border);text-align:center;transition:transform .2s,box-shadow .2s}.price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.price-card.featured{background:var(--teal);border-color:var(--teal)}
-.price-who{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}.price-card.featured .price-who{color:rgba(255,255,255,.55)}
-.price-age{font-family:'Lora',serif;font-size:20px;font-weight:600;margin-bottom:20px}.price-card.featured .price-age{color:var(--white)}
-.price-amount{font-family:'Lora',serif;font-size:52px;font-weight:600;color:var(--teal);line-height:1}.price-card.featured .price-amount{color:var(--gold)}
-.price-currency{font-size:20px;font-weight:500;vertical-align:super}
-.price-period{font-size:13px;color:var(--muted);margin-top:6px;margin-bottom:24px}.price-card.featured .price-period{color:rgba(255,255,255,.55)}
-.price-features{list-style:none;text-align:left;display:flex;flex-direction:column;gap:10px}
-.price-features li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;font-weight:300}.price-card.featured .price-features li{color:rgba(255,255,255,.75)}
-.price-features li::before{content:'checkmark';content:'✓';position:absolute;left:0;color:var(--gold);font-weight:500}
-/* REGISTER */
-.register{background:var(--cream-dark);padding:64px 5%;position:relative;overflow:hidden}
-.register-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;max-width:1100px;margin:0 auto}
-.register-info h2{font-family:'Lora',serif;font-size:clamp(26px,4vw,38px);font-weight:600;line-height:1.2;margin-bottom:16px}.register-info h2 em{font-style:italic;color:var(--teal)}
-.ri-desc{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:32px;font-weight:300}
-.promise-list{display:flex;flex-direction:column;gap:18px}
-.promise{display:flex;gap:14px;align-items:flex-start}
-.promise-icon{width:38px;height:38px;border-radius:10px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
-.promise h4{font-size:14px;font-weight:500;margin-bottom:3px}.promise p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.5}
-.register-form-wrap{background:var(--white);border-radius:24px;padding:32px;border:1px solid var(--border);box-shadow:var(--shadow)}
-.form-submit-btn{width:100%;padding:16px;background:var(--teal);color:var(--white);border:none;border-radius:var(--rs);font-size:16px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:10px}
-.form-submit-btn:hover{background:var(--teal-mid);transform:translateY(-1px)}.form-submit-btn:disabled{opacity:.7;cursor:not-allowed;transform:none}
-/* FOOTER */
-footer{background:var(--charcoal);color:rgba(255,255,255,.55);padding:48px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
-.footer-logo{font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--white)}.footer-logo span{color:var(--gold)}
-/* LOGIN */
-.login-page{min-height:100vh;background:var(--cream);display:flex;align-items:center;justify-content:center;padding:24px;position:relative;overflow:hidden}
-.login-page::before{content:'ْ';position:absolute;font-size:600px;color:rgba(27,77,62,.03);font-family:'Lora',serif;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
-.login-card{background:var(--white);border-radius:28px;padding:52px 48px;width:100%;max-width:440px;border:1px solid var(--border);box-shadow:var(--shadow-lg);position:relative;z-index:1;animation:fadeUp .5s ease both}
-.login-back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif;margin-bottom:28px;padding:0;transition:color .2s}.login-back:hover{color:var(--teal)}
-.login-logo{font-family:'Lora',serif;font-size:26px;font-weight:600;color:var(--teal);margin-bottom:4px}.login-logo span{color:var(--gold)}
-.login-tagline{font-size:13px;color:var(--muted);font-style:italic;margin-bottom:36px}
-.login-heading{font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--charcoal);margin-bottom:6px}
-.login-sub{font-size:13px;color:var(--muted);margin-bottom:28px;font-weight:300}
-.pwd-wrap{position:relative}.pwd-wrap input{padding-right:44px}
-.pwd-toggle{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--muted);font-size:16px;padding:0;transition:color .2s}.pwd-toggle:hover{color:var(--teal)}
-.login-submit{width:100%;padding:15px;background:var(--teal);color:var(--white);border:none;border-radius:var(--rs);font-size:15px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:6px}
-.login-submit:hover{background:var(--teal-mid);transform:translateY(-1px)}.login-submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
-.login-error{background:#FEE8E8;color:#C0392B;font-size:13px;padding:12px 16px;border-radius:var(--rs);margin-bottom:16px;display:none;border:1px solid rgba(192,57,43,.15)}.login-error.show{display:block;animation:fadeDown .3s ease}
-/* DASHBOARD */
-.sidebar{width:248px;flex-shrink:0;background:var(--teal);min-height:100vh;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto}
-.sidebar-logo{padding:28px 24px 22px;border-bottom:1px solid rgba(255,255,255,.07)}
-.sidebar-logo-text{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--white)}.sidebar-logo-text span{color:var(--gold)}
-.sidebar-logo-sub{font-size:11px;color:rgba(255,255,255,.35);margin-top:3px;font-style:italic}
-.sidebar-section{padding:18px 20px 6px;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.28)}
-.sidebar-nav{list-style:none;padding:0 12px}
-.sidebar-nav li a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:400;color:rgba(255,255,255,.6);transition:all .2s;margin-bottom:2px;cursor:pointer}
-.sidebar-nav li a:hover{background:rgba(255,255,255,.07);color:var(--white)}.sidebar-nav li a.active{background:rgba(255,255,255,.12);color:var(--white);font-weight:500}
-.ni{font-size:15px;width:20px;text-align:center;flex-shrink:0}
-.sidebar-bottom{margin-top:auto;padding:18px 16px;border-top:1px solid rgba(255,255,255,.07)}
-.sidebar-user{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.sidebar-avatar{width:36px;height:36px;border-radius:50%;background:rgba(201,168,76,.2);color:var(--gold);font-family:'Lora',serif;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.sidebar-user-name{font-size:13px;font-weight:500;color:var(--white)}.sidebar-user-role{font-size:11px;color:rgba(255,255,255,.35);margin-top:1px}
-.sidebar-logout{background:none;border:none;color:rgba(255,255,255,.35);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;padding:0;transition:color .2s}.sidebar-logout:hover{color:rgba(255,255,255,.7)}
-.dash-main{flex:1;overflow-y:auto;background:var(--cream);display:flex;flex-direction:column}
-.topbar{background:rgba(250,247,242,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;flex-shrink:0}
-.topbar-title{font-family:'Lora',serif;font-size:18px;font-weight:600;color:var(--charcoal)}.topbar-title em{font-style:italic;color:var(--teal)}
-.topbar-right{display:flex;align-items:center;gap:12px}.topbar-date{font-size:12px;color:var(--muted)}
-.topbar-pill{background:var(--gold-light);color:#8B6914;font-size:11px;font-weight:500;padding:5px 13px;border-radius:100px;border:1px solid rgba(201,168,76,.25)}
-.dash-content{padding:32px;flex:1}
-.panel{display:none;animation:fadeUp .4s ease both}.panel.active{display:block}
-.stats-row{display:grid;gap:20px;margin-bottom:28px}
-.c2{grid-template-columns:repeat(2,1fr)}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
-.stat-card{background:var(--white);border-radius:var(--r);padding:24px;border:1px solid var(--border);box-shadow:var(--shadow-sm);transition:transform .2s}.stat-card:hover{transform:translateY(-2px)}
-.stat-card.teal{background:var(--teal)}.stat-card.gold{background:var(--gold)}
-.sc-icon{font-size:24px;margin-bottom:12px}.sc-label{font-size:11px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.stat-card.teal .sc-label,.stat-card.gold .sc-label{color:rgba(255,255,255,.55)}
-.sc-num{font-family:'Lora',serif;font-size:34px;font-weight:600;color:var(--teal);line-height:1}
-.stat-card.teal .sc-num{color:var(--gold)}.stat-card.gold .sc-num{color:var(--white)}
-.sc-sub{font-size:12px;color:var(--muted);margin-top:5px;font-weight:300}.stat-card.teal .sc-sub,.stat-card.gold .sc-sub{color:rgba(255,255,255,.5)}
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
-.tscroll{overflow-x:auto}
-table{width:100%;border-collapse:collapse}
-thead th{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
-tbody td{padding:13px 14px;font-size:13px;border-bottom:1px solid rgba(27,77,62,.04);vertical-align:middle}
-tbody tr:last-child td{border-bottom:none}tbody tr:hover td{background:var(--teal-pale)}
-.prog-bar{background:var(--teal-light);border-radius:100px;height:7px;overflow:hidden;margin-top:5px}
-.prog-fill{height:100%;background:var(--teal);border-radius:100px}
-.modal-overlay{position:fixed;inset:0;background:rgba(44,44,42,.5);z-index:500;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
-.modal-overlay.open{display:flex;animation:fadeIn .2s ease}
-.modal{background:var(--white);border-radius:24px;padding:36px;width:100%;max-width:480px;box-shadow:var(--shadow-lg);animation:fadeUp .3s ease;max-height:90vh;overflow-y:auto}
-.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
-.modal-title{font-family:'Lora',serif;font-size:20px;font-weight:600}
-.modal-close{background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0;line-height:1;transition:color .2s}.modal-close:hover{color:var(--charcoal)}
-.modal-actions{display:flex;gap:10px;margin-top:24px}.modal-actions .btn{flex:1;justify-content:center;border-radius:var(--rs)}
-.user-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(27,77,62,.05)}.user-row:last-child{border-bottom:none}
-.user-avatar{width:38px;height:38px;border-radius:50%;background:var(--teal-light);color:var(--teal);font-family:'Lora',serif;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.user-name{font-size:13px;font-weight:500}.user-detail{font-size:11px;color:var(--muted);margin-top:1px;font-weight:300}
-.user-actions{margin-left:auto;display:flex;gap:6px;flex-shrink:0}
-.att-toggle{display:flex;gap:6px}
-.att-btn{padding:6px 14px;border-radius:8px;font-size:12px;font-weight:500;border:1.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
-.att-btn.present{background:#E6F4EE;color:#1B7A4A;border-color:#B8DFC9}.att-btn.absent{background:#FEE8E8;color:#C0392B;border-color:#F5C0B8}
-.note-textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:var(--rs);font-size:13px;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);resize:vertical;outline:none;min-height:90px;transition:border-color .2s}.note-textarea:focus{border-color:var(--teal)}
-.timeline{display:flex;flex-direction:column;gap:0}
-.tl-item{display:flex;gap:14px;padding-bottom:20px;position:relative}.tl-item::before{content:'';position:absolute;left:14px;top:30px;bottom:0;width:1px;background:var(--border)}.tl-item:last-child::before{display:none}
-.tl-dot{width:28px;height:28px;border-radius:50%;background:var(--teal-light);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
-.tl-title{font-size:13px;font-weight:500}.tl-sub{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
-.info-box{background:var(--teal-pale);border-radius:var(--rs);padding:16px 18px;border-left:3px solid var(--teal);margin-bottom:24px}
-.info-box-title{font-size:12px;font-weight:600;color:var(--teal);margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
-.info-box p{font-size:13px;color:var(--charcoal);line-height:1.6}
-@media(max-width:900px){.sidebar{width:210px}.c4{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
-@media(max-width:768px){.hero{grid-template-columns:1fr;padding:100px 5% 60px}.hero-visual{display:none}.stats-bar{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr}.register-wrap{grid-template-columns:1fr}.nav-links{display:none}.fr{grid-template-columns:1fr}.acc-left{flex-direction:column;align-items:flex-start;gap:6px}.hide-mob{display:none!important}}
-@media(max-width:640px){.sidebar{display:none}.dash-content{padding:20px}.c3{grid-template-columns:repeat(2,1fr)}.login-card{padding:36px 28px}}
+
+/* ─── RESET ─── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html, body { background:#000; color:#e8dfd0; }
+html { scroll-behavior:smooth; }
+body { font-family:'EB Garamond', Georgia, serif; overflow-x:hidden; cursor:none; }
+
+/* ─── TOKENS ─── */
+:root {
+  --gold  : #b8903a;
+  --gold2 : #d4aa55;
+  --cream : #ede6d8;
+  --dust  : #a89880;
+  --dust2 : #c8b89e;
+  --line  : rgba(184,144,58,.18);
+  --G     : 'EB Garamond', Georgia, serif;
+  --J     : 'Jost', sans-serif;
+  --U     : 'Noto Nastaliq Urdu', serif;
+  --M     : 'Noto Sans Malayalam', sans-serif;
+}
+
+/* ─── CURSOR ─── */
+#cd {
+  position:fixed; z-index:9999;
+  width:6px; height:6px; border-radius:50%;
+  background:var(--gold); pointer-events:none;
+  transform:translate(-50%,-50%);
+  transition:width .18s, height .18s;
+}
+#cr {
+  position:fixed; z-index:9998;
+  width:28px; height:28px; border-radius:50%;
+  border:1px solid rgba(184,144,58,.4); pointer-events:none;
+  transform:translate(-50%,-50%);
+  transition:width .3s, height .3s, opacity .3s;
+}
+
+/* ─── NAV ─── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  height:56px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 2.8rem;
+  background:#000;
+  border-bottom:1px solid transparent;
+  transition:border-color .4s;
+}
+nav.on { border-color:var(--line); }
+.n-logo-wrap { display:flex; align-items:center; text-decoration:none; }
+.n-logo-img {
+  height:38px; width:auto; display:block;
+  filter: drop-shadow(0 0 10px rgba(184,144,58,.35));
+}
+.n-links { display:flex; align-items:center; gap:2.2rem; list-style:none; }
+.n-links a {
+  font-family:var(--J); font-size:.72rem; font-weight:300;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--dust2); text-decoration:none; transition:color .25s;
+}
+.n-links a:hover { color:var(--gold); }
+.n-pill {
+  border:1px solid var(--line) !important;
+  padding:.35rem 1rem !important;
+  color:var(--gold) !important;
+  transition:background .25s, color .25s !important;
+}
+.n-pill:hover { background:var(--gold) !important; color:#000 !important; }
+
+/* ─── NAV DROPDOWNS ─── */
+.n-drop { position:relative; }
+.n-drop-trigger {
+  display:flex; align-items:center; gap:.35rem; cursor:pointer;
+}
+.n-caret {
+  font-size:.55rem; opacity:.6;
+  transition:transform .25s;
+  display:inline-block;
+}
+.n-drop:hover .n-caret { transform:rotate(180deg); }
+.n-dropdown {
+  position:absolute; top:calc(100% + 14px); left:50%;
+  transform:translateX(-50%);
+  background:#080808;
+  border:1px solid var(--line);
+  min-width:180px;
+  padding:.5rem 0;
+  opacity:0; pointer-events:none;
+  transform:translateX(-50%) translateY(-6px);
+  transition:opacity .22s, transform .22s;
+  z-index:600;
+}
+.n-drop:hover .n-dropdown {
+  opacity:1; pointer-events:all;
+  transform:translateX(-50%) translateY(0);
+}
+.n-dd-item {
+  display:block;
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--dust2); text-decoration:none;
+  padding:.65rem 1.2rem;
+  transition:color .2s, padding-left .2s, background .2s;
+}
+.n-dd-item:hover {
+  color:var(--gold);
+  background:rgba(184,144,58,.05);
+  padding-left:1.6rem;
+}
+
+/* ─── COMING SOON TOAST ─── */
+#cs-toast {
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(20px);
+  background:#0d0d0d; border:1px solid var(--line);
+  padding:1.1rem 2rem 1rem;
+  text-align:center;
+  opacity:0; pointer-events:none;
+  transition:opacity .35s, transform .35s;
+  z-index:9999; min-width:260px;
+}
+#cs-toast.show {
+  opacity:1; transform:translateX(-50%) translateY(0);
+}
+.cs-emoji { font-size:1.3rem; display:block; margin-bottom:.4rem; }
+.cs-line1 {
+  font-family:var(--G); font-size:1rem; font-style:italic;
+  color:var(--cream); display:block; margin-bottom:.2rem;
+}
+.cs-line2 {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.1em; color:var(--dust);
+}
+
+
+
+/* ─── HERO ─── */
+.hero {
+  background:#000;
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr;
+  position:relative;
+  overflow:hidden;
+}
+
+/* ghost urdu letter behind hero */
+.hero-ghost {
+  position:absolute; bottom:-2rem; left:-2rem;
+  font-family:var(--U); font-size:40vw; line-height:.9;
+  color:var(--gold); opacity:.025;
+  user-select:none; pointer-events:none;
+  z-index:0;
+  animation:gdrift 80s ease-in-out infinite alternate;
+}
+@keyframes gdrift {
+  from { transform:rotate(-2deg); }
+  to   { transform:rotate(2deg) scale(1.03); }
+}
+
+/* LEFT */
+.hero-left {
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  text-align:center;
+  padding:7rem 3rem 5rem 3rem;
+  position:relative; z-index:2;
+}
+.hero-gold-rule { margin:1.8rem auto; }
+.hero-tagline { text-align:center; margin-left:auto; margin-right:auto; }
+.hero-btns { justify-content:center; }
+.hero-script-badges { justify-content:center; }
+.hero-scroll { justify-content:center; }
+.hero-eyebrow {
+  font-family:var(--J); font-size:10px;
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:1.8rem;
+  opacity:0; animation:up .8s .2s both;
+}
+.hero-heading {
+  font-family:var(--G);
+  font-size:clamp(42px, 5vw, 68px);
+  color:#e8e0d0; line-height:1.12;
+  font-weight:400;
+  opacity:0; animation:up .9s .4s both;
+}
+.hero-heading em { color:var(--gold); font-style:italic; }
+.hero-gold-rule {
+  width:48px; height:1px;
+  background:var(--gold);
+  margin:1.8rem 0;
+  opacity:0; animation:up .7s .6s both;
+}
+.hero-tagline {
+  font-family:var(--J); font-size:14px;
+  color:#9a8f82; line-height:1.85;
+  font-weight:300; max-width:380px;
+  margin-bottom:2.2rem;
+  opacity:0; animation:up .9s .8s both;
+}
+.hero-btns {
+  display:flex; gap:12px; flex-wrap:wrap;
+  margin-bottom:2rem;
+  opacity:0; animation:up .8s 1s both;
+}
+.hero-script-badges {
+  display:flex; gap:18px; flex-wrap:wrap;
+  opacity:0; animation:up .7s 1.2s both;
+}
+.hero-script-badge {
+  font-family:var(--J); font-size:10px;
+  letter-spacing:.08em; color:#5a5248;
+  text-transform:uppercase;
+}
+.hero-script-badge::before {
+  content:'●'; color:var(--gold);
+  margin-right:6px; font-size:5px; vertical-align:middle;
+}
+.hero-scroll {
+  display:flex; align-items:center; gap:.8rem;
+  margin-top:3.5rem;
+  opacity:0; animation:up .7s 1.4s both;
+}
+.hero-scroll span {
+  font-family:var(--J); font-size:.62rem; font-weight:300;
+  letter-spacing:.35em; text-transform:uppercase; color:var(--dust);
+}
+.hero-scroll-line {
+  width:40px; height:1px;
+  background:linear-gradient(to right, var(--gold), transparent);
+  animation:linepulse 2s ease-in-out infinite;
+}
+@keyframes linepulse {
+  0%,100%{ transform:scaleX(.4); opacity:.4; }
+  50%    { transform:scaleX(1);  opacity:1;  }
+}
+
+/* RIGHT — categories */
+.hero-right {
+  background:#000;
+  display:flex; flex-direction:column;
+  justify-content:center;
+  padding:5rem 2.8rem 5rem 3.5rem;
+  position:relative; z-index:2;
+  opacity:0; animation:fadeIn 1s .6s both;
+}
+.categories-label {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.35em; text-transform:uppercase;
+  color:var(--gold); opacity:.75;
+  margin-bottom:3rem;
+}
+
+/* ─── ACCORDION (shared) ─── */
+.cat { border-top:1px solid var(--line); overflow:hidden; }
+.cat:last-child { border-bottom:1px solid var(--line); }
+.cat-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:1.4rem 0; cursor:pointer;
+  transition:padding .4s cubic-bezier(.16,1,.3,1);
+}
+.cat.open .cat-header { padding:1.6rem 0 .8rem; }
+.cat-title {
+  font-family:var(--G);
+  font-size:clamp(1.5rem, 2.8vw, 2.2rem);
+  font-weight:400; font-style:italic;
+  color:var(--cream); letter-spacing:.01em;
+  transition:color .3s;
+}
+.cat-header:hover .cat-title,
+.cat.open .cat-title { color:var(--gold); }
+.cat-arrow {
+  font-size:.7rem; color:var(--dust); line-height:1;
+  transition:transform .4s cubic-bezier(.16,1,.3,1), color .3s;
+}
+.cat.open .cat-arrow { transform:rotate(45deg); color:var(--gold); }
+.cat-body {
+  display:grid; grid-template-rows:0fr;
+  transition:grid-template-rows .4s cubic-bezier(.16,1,.3,1);
+}
+.cat.open .cat-body { grid-template-rows:1fr; }
+.cat-body-inner { overflow:hidden; }
+.cat-items {
+  padding:.4rem 0 1.8rem;
+  display:flex; flex-direction:column; gap:.2rem;
+}
+.cat-item {
+  font-family:var(--J); font-size:.95rem; font-weight:300;
+  color:var(--dust2); line-height:1;
+  padding:.55rem 0;
+  display:flex; align-items:center; gap:1rem;
+  border-bottom:1px solid rgba(184,144,58,.06);
+  text-decoration:none; cursor:pointer;
+  transition:color .25s, padding-left .25s;
+}
+.cat-item:last-child { border-bottom:none; }
+.cat-item:hover { color:var(--cream); padding-left:.6rem; }
+.cat-item-dot {
+  width:4px; height:4px; border-radius:50%;
+  background:var(--gold); opacity:.4; flex-shrink:0;
+  transition:opacity .25s;
+}
+.cat-item:hover .cat-item-dot { opacity:1; }
+.cat-sub {
+  font-family:var(--J); font-size:.78rem; font-weight:300;
+  color:var(--dust); margin-top:.15rem; padding-left:1.4rem;
+}
+
+/* ─── QUICK NAV ─── */
+.quick-nav {
+  background:#000;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.qn-inner {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.qn-card {
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  padding:2.2rem 2rem 2rem;
+  border-right:1px solid var(--line);
+  text-decoration:none; cursor:pointer;
+  transition:background .35s;
+}
+.qn-card:last-child { border-right:none; }
+.qn-card:hover { background:#07070a; }
+.qn-card::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  opacity:0; transition:opacity .5s;
+  background:radial-gradient(ellipse at 30% 100%, rgba(184,144,58,.07) 0%, transparent 65%);
+}
+.qn-card:hover::before { opacity:1; }
+.qn-num {
+  font-family:var(--J); font-size:.6rem; font-weight:300;
+  letter-spacing:.3em; color:var(--gold); opacity:.6;
+  margin-bottom:.9rem; display:block;
+}
+.qn-glyph {
+  font-family:var(--U); font-size:2.6rem; line-height:1;
+  color:var(--gold); opacity:.18;
+  display:block; margin-bottom:.8rem;
+  transition:opacity .35s, transform .4s;
+}
+.qn-card:hover .qn-glyph { opacity:.35; transform:scale(1.08); }
+.qn-label {
+  font-family:var(--G); font-size:1.15rem; font-weight:400;
+  color:var(--cream); letter-spacing:.01em;
+  display:block; margin-bottom:.35rem;
+  transition:color .3s;
+}
+.qn-card:hover .qn-label { color:var(--gold2); }
+.qn-desc {
+  font-family:var(--J); font-size:.72rem; font-weight:300;
+  color:var(--dust); line-height:1.6;
+  display:block; flex:1;
+}
+.qn-arrow {
+  font-family:var(--J); font-size:.75rem;
+  color:var(--gold); opacity:0;
+  margin-top:1.2rem; display:block;
+  transition:opacity .3s, transform .3s;
+  transform:translateX(-6px);
+}
+.qn-card:hover .qn-arrow { opacity:1; transform:translateX(0); }
+
+
+.divider {
+  background:#000;
+  display:flex; align-items:center; gap:1.5rem;
+  padding:0 2.8rem; height:1px;
+}
+.divider-line {
+  flex:1; height:1px;
+  background:linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity:.2;
+}
+.divider-mark {
+  font-family:var(--U); font-size:1rem;
+  color:var(--gold); opacity:.3; line-height:1;
+}
+
+/* ─── MANIFESTO ─── */
+.manifesto { background:#000; padding:6rem 0; }
+.m-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 2.8rem; margin-bottom:2.8rem;
+}
+.m-eyebrow {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.32em; text-transform:uppercase;
+  color:var(--gold); opacity:.85;
+}
+.m-nav { display:flex; align-items:center; gap:.8rem; }
+.m-nav-btn {
+  width:34px; height:34px; border-radius:50%;
+  border:1px solid var(--line); background:transparent;
+  color:var(--dust); font-size:.9rem;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:border-color .25s, color .25s;
+}
+.m-nav-btn:hover { border-color:var(--gold); color:var(--gold); }
+.m-counter {
+  font-family:var(--J); font-size:.7rem; font-weight:300;
+  color:var(--dust2); letter-spacing:.1em;
+  min-width:36px; text-align:center;
+}
+.cards-track-wrap { overflow:hidden; padding:0 2.8rem; cursor:grab; }
+.cards-track-wrap:active { cursor:grabbing; }
+.cards-track {
+  display:flex; gap:1.5rem;
+  transition:transform .5s cubic-bezier(.16,1,.3,1);
+  will-change:transform; user-select:none;
+}
+.stmt {
+  background:#000; border:1px solid var(--line);
+  flex:0 0 calc(50% - .75rem);
+  padding:3rem 2.8rem;
+  position:relative; overflow:hidden;
+  transition:border-color .4s;
+}
+.stmt:hover { border-color:rgba(184,144,58,.3); }
+.stmt-n {
+  font-family:var(--J); font-size:.66rem; font-weight:300;
+  letter-spacing:.28em; text-transform:uppercase;
+  color:var(--gold); opacity:.7;
+  display:block; margin-bottom:2rem;
+}
+.stmt-head {
+  font-family:var(--G);
+  font-size:clamp(1.5rem,2.6vw,2.2rem);
+  font-weight:400; font-style:italic;
+  line-height:1.22; color:var(--cream); margin-bottom:1.4rem;
+}
+.stmt-head b { font-style:normal; font-weight:500; color:var(--gold2); }
+.stmt-text {
+  font-family:var(--J); font-size:1rem; font-weight:300;
+  color:var(--dust2); line-height:1.85;
+}
+.stmt-glyph {
+  position:absolute; right:-1rem; bottom:-2rem;
+  font-family:var(--U); font-size:9rem; line-height:1;
+  color:var(--gold); opacity:.04;
+  user-select:none; pointer-events:none; transition:opacity .5s;
+}
+.stmt:hover .stmt-glyph { opacity:.09; }
+.m-dots { display:flex; gap:.5rem; justify-content:center; margin-top:2rem; padding:0 2.8rem; }
+.m-dot {
+  width:5px; height:5px; border-radius:50%;
+  background:var(--dust); opacity:.3;
+  transition:opacity .3s, background .3s; cursor:none;
+}
+.m-dot.active { background:var(--gold); opacity:1; }
+
+/* ─── COMMUNITY ─── */
+.community {
+  background:#000;
+  display:grid; grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--line); min-height:70vh;
+}
+.comm-half {
+  background:#000; position:relative; overflow:hidden;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:4rem 3rem; cursor:none;
+  border-right:1px solid var(--line); transition:background .5s;
+}
+.comm-half:last-child { border-right:none; }
+.comm-half:hover { background:#080808; }
+.comm-half::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  opacity:0; transition:opacity .6s;
+  background:radial-gradient(ellipse at 40% 80%, rgba(184,144,58,.07) 0%, transparent 65%);
+}
+.comm-half:hover::before { opacity:1; }
+.comm-bg-num {
+  position:absolute; top:-1rem; left:2rem;
+  font-family:var(--G); font-size:18rem; font-weight:600;
+  color:var(--gold); opacity:.02; line-height:1;
+  pointer-events:none; user-select:none; transition:opacity .5s;
+}
+.comm-half:hover .comm-bg-num { opacity:.04; }
+.comm-glyph {
+  position:absolute; top:50%; right:1.5rem; transform:translateY(-50%);
+  font-family:var(--U); font-size:14rem; line-height:1;
+  color:var(--gold); opacity:.03;
+  user-select:none; pointer-events:none;
+  transition:opacity .5s, transform .6s;
+}
+.comm-half:hover .comm-glyph { opacity:.07; transform:translateY(-52%) scale(1.04); }
+.comm-inner { position:relative; z-index:2; }
+.comm-tag {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.3em; text-transform:uppercase;
+  color:var(--gold); opacity:.85; display:block; margin-bottom:1.1rem;
+}
+.comm-title {
+  font-family:var(--G); font-size:clamp(2.2rem,4vw,3.4rem);
+  font-weight:400; line-height:1.12; color:var(--cream);
+}
+.comm-title em { font-style:italic; color:var(--gold2); display:block; }
+.comm-desc {
+  font-family:var(--J); font-size:1rem; font-weight:300;
+  color:var(--dust2); line-height:1.85;
+  margin-top:1.1rem; max-width:320px;
+}
+.comm-list { display:flex; flex-wrap:wrap; gap:.4rem .65rem; margin-top:1.6rem; }
+.comm-chip {
+  font-family:var(--J); font-size:.68rem; font-weight:300;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--dust2); border:1px solid rgba(184,144,58,.25);
+  padding:.28rem .75rem; transition:border-color .3s, color .3s;
+}
+.comm-half:hover .comm-chip { border-color:rgba(184,144,58,.28); color:var(--cream); }
+.comm-cta {
+  display:inline-flex; align-items:center; gap:.65rem;
+  margin-top:2.5rem;
+  font-family:var(--J); font-size:.72rem; font-weight:300;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); text-decoration:none;
+  border-bottom:1px solid rgba(184,144,58,.28); padding-bottom:.28rem;
+  transition:gap .3s, border-color .3s; cursor:pointer;
+}
+.comm-cta:hover { gap:1rem; border-color:var(--gold); }
+
+/* ─── WHAT WE OFFER ─── */
+.offers {
+  background:#050505;
+  padding:6rem 2.8rem;
+  border-top:1px solid var(--line);
+}
+.offers-inner { max-width:1000px; margin:0 auto; }
+.offers-eyebrow {
+  font-family:var(--J); font-size:10px; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--gold);
+  display:block; margin-bottom:1rem;
+}
+.offers-heading {
+  font-family:var(--G); font-size:clamp(32px,4vw,52px);
+  color:var(--cream); font-weight:400;
+  margin-bottom:3rem; line-height:1.2;
+}
+.offers-heading em { color:var(--gold); font-style:italic; }
+.offers-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+}
+/* Clean internal cross: vertical between col1/col2, horizontal between row1/row2 */
+.offers-grid .cat { background:#050505; border:none; }
+.offers-grid .cat:nth-child(odd)  { border-right:1px solid var(--line); }
+.offers-grid .cat:nth-child(1),
+.offers-grid .cat:nth-child(2)    { border-bottom:1px solid var(--line); }
+.offers-grid .cat-header { padding:1.6rem 1.4rem; cursor:pointer; }
+.offers-grid .cat.open .cat-header { padding:1.8rem 1.4rem .8rem; }
+.offers-grid .cat-items { padding:.4rem 1.4rem 1.8rem; }
+
+/* ─── CLOSING ─── */
+.closing {
+  background:#000; padding:9rem 2rem; text-align:center;
+  border-top:1px solid var(--line); position:relative; overflow:hidden;
+}
+.closing::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse 50% 50% at 50% 55%, rgba(184,144,58,.06) 0%, transparent 65%);
+}
+.closing-head {
+  font-family:var(--G); font-size:clamp(2.4rem,5vw,4.5rem);
+  font-weight:400; line-height:1.15;
+  letter-spacing:-.01em; color:var(--cream);
+  position:relative; z-index:1;
+}
+.closing-head em { font-style:italic; color:var(--gold); }
+.closing-sub {
+  font-family:var(--J); font-size:1.05rem; font-weight:300;
+  font-style:italic; color:var(--dust2);
+  max-width:380px; margin:1.6rem auto 0; line-height:1.9;
+  position:relative; z-index:1;
+}
+.closing-btns {
+  display:flex; gap:1rem; justify-content:center;
+  margin-top:3rem; flex-wrap:wrap; position:relative; z-index:1;
+}
+
+/* ─── BUTTONS ─── */
+.btn {
+  font-family:var(--J); font-size:.72rem; font-weight:300;
+  letter-spacing:.18em; text-transform:uppercase;
+  text-decoration:none; cursor:pointer;
+  padding:.85rem 2rem; display:inline-block; transition:all .28s;
+  position:relative; z-index:10;
+}
+.btn-fill  { background:var(--gold); color:#000; }
+.btn-fill:hover  { background:var(--gold2); }
+.btn-ghost { border:1px solid var(--line); color:var(--dust); }
+.btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+
+/* ─── FOOTER ─── */
+footer {
+  background:#000; border-top:1px solid var(--line);
+  padding:3.5rem 2.8rem 2rem;
+  display:flex; flex-direction:column; align-items:center; gap:1.4rem;
+}
+.f-tag {
+  font-family:var(--G); font-size:1.1rem; font-style:italic;
+  color:var(--dust2); line-height:1.7; text-align:center;
+}
+.f-tag strong {
+  font-style:normal; font-weight:500; color:var(--gold2);
+}
+.f-social { display:flex; gap:.8rem; align-items:center; }
+.f-social a {
+  width:36px; height:36px; border-radius:50%;
+  border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none;
+  transition:border-color .25s, background .25s;
+}
+.f-social a:hover { border-color:var(--gold); background:rgba(184,144,58,.07); }
+.f-social a svg { width:15px; height:15px; fill:var(--dust); transition:fill .25s; }
+.f-social a:hover svg { fill:var(--gold); }
+.f-bottom {
+  border-top:1px solid var(--line);
+  padding-top:1.4rem; width:100%;
+  display:flex; justify-content:center;
+  font-family:var(--J); font-size:.6rem; font-weight:300;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:rgba(168,152,128,.45);
+}
+@media(max-width:860px){
+  footer { padding:2.5rem 1.4rem 1.5rem; }
+}
+
+/* ─── SCROLL TARGETS ─── */
+#manifesto, #community, #artists, #events, #offers, #quick-nav {
+  scroll-margin-top: 56px;
+}
+.sr { opacity:0; transform:translateY(22px); transition:opacity .9s ease, transform .9s ease; }
+.sr.in { opacity:1; transform:translateY(0); }
+.d1 { transition-delay:.1s; }
+.d2 { transition-delay:.22s; }
+.d3 { transition-delay:.34s; }
+
+@keyframes up     { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0}                            to{opacity:1} }
+
+/* ─── MOBILE ─── */
+@media(max-width:860px) {
+  nav { padding:0 1.4rem; }
+  .n-links a:not(.n-pill) { display:none; }
+
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-left {
+    padding:7rem 1.6rem 4rem;
+  }
+  .hero-heading { font-size:clamp(38px, 10vw, 52px); }
+
+  .qn-inner { grid-template-columns:1fr 1fr; }
+  .qn-card:nth-child(2) { border-right:none; }
+  .qn-card:nth-child(3) { border-right:1px solid var(--line); border-top:1px solid var(--line); }
+  .qn-card:nth-child(4) { border-top:1px solid var(--line); border-right:none; }
+
+  .manifesto { padding:4rem 0; }
+  .m-header { padding:0 1.4rem; }
+  .cards-track-wrap { padding:0 1.4rem; }
+  .stmt { flex:0 0 100%; padding:2.2rem 1.8rem; }
+  .m-dots { padding:0 1.4rem; }
+
+  .community { grid-template-columns:1fr; }
+  .comm-half { border-right:none; border-bottom:1px solid var(--line); min-height:50vh; }
+
+  .offers { padding:4rem 1.4rem; }
+  .offers-grid { grid-template-columns:1fr; }
+  .offers-grid .cat { border-right:none !important; border-bottom:1px solid var(--line) !important; }
+  .offers-grid .cat:last-child { border-bottom:none !important; }
+  .offers-grid .cat-header { padding:1.4rem 0; }
+  .offers-grid .cat.open .cat-header { padding:1.6rem 0 .8rem; }
+  .offers-grid .cat-items { padding:.4rem 0 1.8rem; }
+
+  .closing { padding:6rem 1.4rem; }
+}
+
+/* ─── JOIN US POPUP ─── */
+.kf-overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(0,0,0,0.75);
+  z-index:9999; align-items:center; justify-content:center; padding:1rem;
+}
+.kf-overlay.active { display:flex; }
+.kf-popup {
+  background:#0a0a0a; border:0.5px solid #2a2a2a; border-radius:16px;
+  width:100%; max-width:420px; padding:2rem 2rem 1.5rem;
+  position:relative; font-family:var(--J);
+}
+.kf-close {
+  position:absolute; top:1rem; right:1rem;
+  background:none; border:none; color:#666; cursor:pointer; font-size:20px;
+}
+.kf-logo-area { text-align:center; margin-bottom:1.5rem; }
+.kf-logo-area img { height:56px; object-fit:contain; }
+.kf-title {
+  font-family:var(--G); font-size:22px; color:#e8e0d0;
+  font-weight:400; margin:0 0 .25rem; text-align:center;
+}
+.kf-sub { font-size:12px; color:#666; text-align:center; margin-bottom:1.5rem; line-height:1.5; }
+.kf-field { margin-bottom:1rem; }
+.kf-label { font-size:11px; color:#888; letter-spacing:.08em; text-transform:uppercase; display:block; margin-bottom:6px; }
+.kf-input, .kf-select {
+  width:100%; background:#141414; border:0.5px solid #2a2a2a; border-radius:8px;
+  color:#e8e0d0; font-size:13px; padding:10px 12px;
+  box-sizing:border-box; outline:none; transition:border-color .2s;
+}
+.kf-input:focus, .kf-select:focus { border-color:#c8922a; }
+.kf-select option { background:#141414; }
+.kf-row { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+.kf-btn {
+  width:100%; background:#c8922a; border:none; border-radius:8px;
+  color:#0a0a0a; font-size:13px; font-weight:500; padding:12px;
+  cursor:pointer; margin-top:.5rem; letter-spacing:.04em; transition:opacity .2s;
+}
+.kf-btn:hover { opacity:.88; }
+.kf-footer { text-align:center; font-size:11px; color:#444; margin-top:1rem; }
+
+/* ─── HERO GHOST LETTERS (fixed, like other sections) ─── */
+.hero-bg-letter {
+  position:absolute;
+  pointer-events:none;
+  user-select:none;
+  color:rgba(184,144,58,0.06);
+  line-height:1;
+  z-index:1;
+}
 </style>
 </head>
 <body>
-<div class="toast" id="toast"></div>
-<!-- MODALS -->
-<div class="modal-overlay" id="modal-add-student"><div class="modal"><div class="modal-header"><div class="modal-title" style="font-family:'Lora',serif">Add <em style="color:var(--teal);font-style:italic">Student</em></div><button class="modal-close" onclick="closeModal('modal-add-student')">✕</button></div><div class="fg"><label>Full name</label><input id="ms-name" type="text" placeholder="Student's full name"/></div><div class="fr"><div class="fg"><label>Age</label><input id="ms-age" type="number" placeholder="Age" min="5" max="99"/></div><div class="fg"><label>Level</label><select id="ms-level"><option value="">Select level</option><option>Noorani — Level 1</option><option>Mubtadi — Level 2</option><option>Mutawassit — Level 3</option><option>Mutaqaddim — Level 4</option><option>Mujawwad — Level 5</option></select></div></div><div class="fr"><div class="fg"><label>Country</label><select id="ms-country"><option value="">Select</option><option>UAE</option><option>India</option><option>Saudi Arabia</option><option>Qatar</option><option>Kuwait</option><option>Bahrain</option><option>Oman</option><option>Other</option></select></div><div class="fg"><label>Language</label><select id="ms-lang"><option>English</option><option>Malayalam</option><option>Hindi</option><option>Arabic</option></select></div></div><div class="fr"><div class="fg"><label>Payment status</label><select id="ms-pay"><option value="pending">Pending</option><option value="paid">Paid</option></select></div><div class="fg"><label>Amount</label><input id="ms-amount" type="text" placeholder="e.g. AED 50"/></div></div><div class="modal-actions"><button class="btn btn-ghost btn-sm" onclick="closeModal('modal-add-student')">Cancel</button><button class="btn btn-primary btn-sm" onclick="saveStudent()">Save Student</button></div></div></div>
-<div class="modal-overlay" id="modal-add-teacher"><div class="modal"><div class="modal-header"><div class="modal-title" style="font-family:'Lora',serif">Add <em style="color:var(--teal);font-style:italic">Teacher</em></div><button class="modal-close" onclick="closeModal('modal-add-teacher')">✕</button></div><div class="fg"><label>Full name</label><input id="mt-name" type="text" placeholder="Teacher's full name"/></div><div class="fg"><label>Email</label><input id="mt-email" type="email" placeholder="teacher@email.com"/></div><div class="fg"><label>WhatsApp number</label><input id="mt-phone" type="tel" placeholder="+971 50 000 0000"/></div><div class="modal-actions"><button class="btn btn-ghost btn-sm" onclick="closeModal('modal-add-teacher')">Cancel</button><button class="btn btn-primary btn-sm" onclick="saveTeacher()">Save Teacher</button></div></div></div>
-<div class="modal-overlay" id="modal-add-batch"><div class="modal"><div class="modal-header"><div class="modal-title" style="font-family:'Lora',serif">Add <em style="color:var(--teal);font-style:italic">Batch</em></div><button class="modal-close" onclick="closeModal('modal-add-batch')">✕</button></div><div class="fg"><label>Batch name</label><input id="mb-name" type="text" placeholder="e.g. Noorani Kids - Sat 5pm"/></div><div class="fr"><div class="fg"><label>Level</label><select id="mb-level"><option value="">Select</option><option>Noorani — Level 1</option><option>Mubtadi — Level 2</option><option>Mutawassit — Level 3</option><option>Mutaqaddim — Level 4</option><option>Mujawwad — Level 5</option></select></div><div class="fg"><label>Language</label><select id="mb-lang"><option>English</option><option>Malayalam</option><option>Hindi</option></select></div></div><div class="fr"><div class="fg"><label>Class day</label><select id="mb-day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select></div><div class="fg"><label>Class time</label><input id="mb-time" type="text" placeholder="e.g. 5:00 PM"/></div></div><div class="modal-actions"><button class="btn btn-ghost btn-sm" onclick="closeModal('modal-add-batch')">Cancel</button><button class="btn btn-primary btn-sm" onclick="saveBatch()">Save Batch</button></div></div></div>
 
-<!-- PAGE 1: WEBSITE -->
-<div class="page active" id="page-site">
-<nav class="site-nav"><div class="nav-logo">Sukoon<span>.</span>Academy</div><ul class="nav-links"><li><a onclick="goToSection('how')">How it works</a></li><li><a onclick="goToSection('levels')">Our levels</a></li><li><a onclick="goToSection('pricing')">Pricing</a></li></ul><div class="nav-right"><button class="nav-login" onclick="showPage('page-login')">Login</button><button class="nav-cta" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register now</button></div></nav>
-<section class="hero" id="home">
-<span class="arabic-bg" style="font-size:320px;top:-60px;right:2%">ق</span><span class="arabic-bg" style="font-size:180px;bottom:40px;left:3%">ر</span><span class="arabic-bg-gold" style="font-size:140px;top:80px;left:45%">آ</span><span class="arabic-bg" style="font-size:100px;bottom:80px;right:20%">ن</span>
-<div class="hero-text"><div class="hero-badge">Now enrolling — UAE and worldwide</div><h1>Learn to <em>recite</em> the Quran with peace</h1><p class="hero-desc">Real teachers. Small groups. Applied tajweed that actually sticks — for kids, teens, and adults. Follow-up every single day.</p><div class="hero-buttons"><button class="btn btn-primary" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register your spot</button><button class="btn btn-secondary hide-mob" onclick="goToSection('how')">See how it works</button></div></div>
-<div class="hero-visual"><div class="hero-card tall"><div class="sukoon-mark">ْ</div><div class="hcbt">Recite with peace.</div><div class="hcl">The sukoon — a stillness that gives every letter its truth</div></div><div class="hero-card"><div class="hcn">5</div><div class="hcl">learning levels</div></div><div class="hero-card"><div class="hcn">AED 50</div><div class="hcl">per month for kids</div></div></div>
+<div id="cd"></div>
+<div id="cr"></div>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="/" class="n-logo-wrap">
+    <img src="/logo.png" alt="Kifayat" class="n-logo-img" onerror="this.style.display='none'">
+  </a>
+  <ul class="n-links">
+    <li><a href="#" class="n-pill" onclick="showComingSoon();return false;">Sign in</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+
+    <!-- LEFT -->
+  <div class="hero-left">
+    <p class="hero-eyebrow">Kifayat Collective &nbsp;·&nbsp; Est. 2024</p>
+    <h1 class="hero-heading">
+      Where Every<br><em>Stroke</em> Tells<br>a Story.
+    </h1>
+    <div class="hero-gold-rule"></div>
+    <p class="hero-tagline">
+      A living community of calligraphy artists and enthusiasts - across scripts, across borders, beyond language.
+    </p>
+    <div class="hero-btns">
+      <a href="#closing" class="btn btn-fill" onclick="document.getElementById('kfModal').classList.add('active');return false;">Join the Collective</a>
+      <a href="#quick-nav" class="btn btn-ghost">Explore With Us</a>
+    </div>
+    <div class="hero-script-badges">
+      <span class="hero-script-badge">Malayalam</span>
+      <span class="hero-script-badge">Arabic</span>
+      <span class="hero-script-badge">Latin</span>
+      <span class="hero-script-badge">Modern</span>
+      <span class="hero-script-badge">and more</span>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+    </div>
+  </div>
 </section>
-<div class="stats-bar"><div><div class="stn">5</div><div class="stt">Learning levels</div></div><div><div class="stn">4</div><div class="stt">Students per group</div></div><div><div class="stn">30min</div><div class="stt">Focused sessions</div></div><div><div class="stn">Daily</div><div class="stt">WhatsApp follow-up</div></div></div>
-<div class="accordion-wrap">
-<span class="arabic-bg" style="font-size:280px;top:5%;right:-30px">س</span><span class="arabic-bg-gold" style="font-size:200px;top:35%;left:-20px">ك</span><span class="arabic-bg" style="font-size:220px;top:65%;right:5%">و</span><span class="arabic-bg-gold" style="font-size:180px;top:85%;left:10%">ن</span>
-<div class="accordion-item" id="how"><button class="accordion-trigger" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-tag">How it works</span><span class="acc-title">Simple, personal, <em>effective</em></span></div><div class="acc-icon">+</div></button><div class="accordion-body"><div class="steps"><div class="step-card"><div class="step-num">1</div><h3>Register and get assessed</h3><p>Fill in a quick form. We do a free 10-minute voice note assessment to find your exact level.</p></div><div class="step-card"><div class="step-num">2</div><h3>Join your batch</h3><p>You are placed in a small group of 4 — same age, same level. A WhatsApp group is created with your teacher.</p></div><div class="step-card"><div class="step-num">3</div><h3>Live class on Google Meet</h3><p>One class per week. Your teacher corrects your recitation in real time — every student is heard.</p></div><div class="step-card"><div class="step-num">4</div><h3>Daily WhatsApp follow-up</h3><p>Send a voice note between classes. Your teacher replies with corrections the same day.</p></div></div></div></div>
-<div class="accordion-item" id="levels"><button class="accordion-trigger" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-tag">Our levels</span><span class="acc-title">Every student has a <em>home here</em></span></div><div class="acc-icon">+</div></button><div class="accordion-body"><div class="levels-grid"><div class="level-card"><div class="level-num-badge">Level 1</div><h3>Noorani</h3><div class="level-arabic">نوراني — Foundation</div><p>Complete beginners. Every Arabic letter, its sound, and basic vowels.</p><div class="level-tags"><span class="level-tag">Age 5+</span><span class="level-tag">All ages</span><span class="level-tag">1 class/week</span><span class="level-tag">30 mins</span></div></div><div class="level-card"><div class="level-num-badge">Level 2</div><h3>Mubtadi</h3><div class="level-arabic">مبتدئ — Elementary</div><p>Knows letters but reads slowly. We join letters into words and recite short surahs correctly.</p><div class="level-tags"><span class="level-tag">Age 7+</span><span class="level-tag">All ages</span><span class="level-tag">1 class/week</span><span class="level-tag">30 mins</span></div></div><div class="level-card featured"><div class="level-num-badge">Level 3 — most popular</div><h3>Mutawassit</h3><div class="level-arabic">متوسط — Intermediate</div><p>Can read but makes tajweed errors. We apply the rules in real recitation — no boring theory.</p><div class="level-tags"><span class="level-tag">Age 10+</span><span class="level-tag">All ages</span><span class="level-tag">1 class/week</span><span class="level-tag">35 mins</span></div></div><div class="level-card"><div class="level-num-badge">Level 4</div><h3>Mutaqaddim</h3><div class="level-arabic">متقدم — Advanced</div><p>Reads well but needs polishing. Full applied tajweed in real ayahs.</p><div class="level-tags"><span class="level-tag">Age 13+</span><span class="level-tag">1-2 classes/week</span><span class="level-tag">35 mins</span></div></div><div class="level-card"><div class="level-num-badge">Level 5</div><h3>Mujawwad</h3><div class="level-arabic">مجوَّد — Mastery</div><p>Recite with beauty, rhythm, and full tajweed. Lead your family in prayer with confidence.</p><div class="level-tags"><span class="level-tag">Age 15+</span><span class="level-tag">2 classes/week</span><span class="level-tag">40 mins</span></div></div></div></div></div>
-<div class="accordion-item" id="pricing"><button class="accordion-trigger" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-tag">Pricing</span><span class="acc-title">Less than a coffee a week. <em>Really.</em></span></div><div class="acc-icon">+</div></button><div class="accordion-body"><div id="currency-buttons" style="display:none;flex-wrap:wrap;gap:8px;margin-bottom:24px;justify-content:center"></div><div id="fx-note" style="text-align:center;font-size:11px;color:var(--muted);margin-bottom:6px;font-style:italic"></div><div id="inr-equiv" style="display:none;text-align:center;font-size:12px;color:#B07D20;margin-bottom:16px;font-weight:500"></div><div class="pricing-grid"><div class="price-card"><div class="price-who">Children</div><div class="price-age">Age 5 to 16</div><div class="price-amount"><span class="price-currency" id="sym-kids"></span><span id="amt-kids"></span></div><div class="price-period">per student / per month</div><ul class="price-features"><li>1 live class per week</li><li>Small group of 4 students</li><li>Daily WhatsApp follow-up</li><li>Free level assessment</li><li>Progress tracking</li></ul></div><div class="price-card featured"><div class="price-who">Adults</div><div class="price-age">Age 17 and above</div><div class="price-amount"><span class="price-currency" id="sym-adults"></span><span id="amt-adults"></span></div><div class="price-period">per student / per month</div><ul class="price-features"><li>1-2 live classes per week</li><li>Small group of 4 students</li><li>Daily WhatsApp follow-up</li><li>Free level assessment</li><li>Progress tracking</li></ul></div></div></div></div>
-</div>
-<section class="register" id="register">
-<span class="arabic-bg-gold" style="font-size:300px;top:-40px;right:-20px">ق</span><span class="arabic-bg" style="font-size:160px;bottom:20px;left:2%">ر</span>
-<div class="register-wrap"><div class="register-info"><div style="display:inline-block;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Register now</div><h2>Your journey <em>starts here</em></h2><p class="ri-desc">Fill in the form and we will be in touch within 24 hours to schedule your free assessment. No payment needed yet.</p><div class="promise-list"><div class="promise"><div class="promise-icon">🕌</div><div><h4>Free assessment first</h4><p>We find your exact level before placing you in a group.</p></div></div><div class="promise"><div class="promise-icon">💬</div><div><h4>Response within 24 hours</h4><p>A real person from our team will reach out — not a bot.</p></div></div><div class="promise"><div class="promise-icon">🤍</div><div><h4>No pressure, no commitment</h4><p>Try the first class. Not right for you? No questions asked.</p></div></div></div></div><div class="register-form-wrap"><div class="fg"><label>Full name</label><input type="text" id="f-name" placeholder="Your full name"/></div><div class="fg"><label>Age</label><input type="number" id="f-age" placeholder="Your age" min="5" max="99"/></div><div class="fg"><label>Current Quran reading level</label><select id="f-level"><option value="Not sure — assess me!" selected>I am not sure — assess me!</option><option>I cannot read Arabic yet</option><option>I know letters but read slowly</option><option>I can read but make mistakes</option><option>I read well but want to improve tajweed</option><option>I read with tajweed but want to perfect it</option></select></div><div class="fg"><label>Preferred class time</label><select id="f-time"><option value="Flexible">Flexible — any time slot</option><option>Morning — 8am to 12pm</option><option>Afternoon — 12pm to 4pm</option><option>Evening — 4pm to 8pm</option><option>Night — 8pm to 10pm</option></select></div><div class="fg"><label>Preferred class language</label><select id="f-lang"><option value="English">English</option><option value="Malayalam">Malayalam</option><option value="Hindi">Hindi</option></select></div><div class="fg"><label>Anything you want us to know? <span style="color:var(--muted);font-weight:300">(optional)</span></label><textarea id="f-notes" rows="3" placeholder="e.g. Registering for my child aged 8..."></textarea></div><button class="form-submit-btn" id="f-submit" onclick="submitRegistration()">Submit my registration</button></div></div>
+
+<!-- ══ QUICK NAV ══ -->
+<section class="quick-nav" id="quick-nav">
+  <div class="qn-inner">
+    <a href="#manifesto" class="qn-card">
+      <span class="qn-num">01</span>
+      <span class="qn-glyph">ث</span>
+      <span class="qn-label">The Collective</span>
+      <span class="qn-desc">Our manifesto & who we are</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#artists" class="qn-card">
+      <span class="qn-num">02</span>
+      <span class="qn-glyph">ع</span>
+      <span class="qn-label">The Artists</span>
+      <span class="qn-desc">Stories behind the stroke</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#events" class="qn-card">
+      <span class="qn-num">03</span>
+      <span class="qn-glyph">ر</span>
+      <span class="qn-label">Events & Gatherings</span>
+      <span class="qn-desc">Where art comes alive</span>
+      <span class="qn-arrow">→</span>
+    </a>
+    <a href="#offers" class="qn-card">
+      <span class="qn-num">04</span>
+      <span class="qn-glyph">ف</span>
+      <span class="qn-label">What We Offer</span>
+      <span class="qn-desc">Crafted with intention</span>
+      <span class="qn-arrow">→</span>
+    </a>
+  </div>
 </section>
-<footer><div><div class="footer-logo">Sukoon<span>.</span>Academy</div><div style="font-size:13px;font-style:italic;color:rgba(255,255,255,.3);margin-top:6px">أكاديمية سكون — Recite with peace.</div></div><div style="font-size:13px;text-align:center"><div>UAE · Online · Worldwide</div><div style="margin-top:4px">sukoonquran.netlify.app</div></div><div style="font-size:13px;text-align:right"><div>WhatsApp and Google Meet</div><div style="margin-top:4px;color:rgba(255,255,255,.2)">© 2026 Sukoon Academy</div></div></footer>
+
+<!-- ══ MANIFESTO ══ -->
+<section class="manifesto" id="manifesto">
+  <div class="m-header sr">
+    <span class="m-eyebrow">The Collective</span>
+    <div class="m-nav">
+      <button class="m-nav-btn" id="mPrev" onclick="mSlide(-1)">←</button>
+      <span class="m-counter" id="mCount">1 / 4</span>
+      <button class="m-nav-btn" id="mNext" onclick="mSlide(1)">→</button>
+    </div>
+  </div>
+  <div class="cards-track-wrap" id="mWrap">
+    <div class="cards-track" id="mTrack">
+      <div class="stmt">
+        <span class="stmt-n">01</span>
+        <h2 class="stmt-head">Calligraphy is neither art nor literature. <b>It is the third entity.</b></h2>
+        <p class="stmt-text">For too long, calligraphy has been confined - tied to language, religion, a single culture's claim over the stroke. Kifayat exists to dissolve those borders. The qalam belongs to no one people and every people.</p>
+        <span class="stmt-glyph">ث</span>
+      </div>
+      <div class="stmt">
+        <span class="stmt-n">02</span>
+        <h2 class="stmt-head">The artist deserves <b>more than a wall</b> to hang their work on.</h2>
+        <p class="stmt-text">Skilled hands go unseen every day - not for lack of talent, but lack of a platform built for them. Kifayat is that platform. We celebrate the maker as much as the made.</p>
+        <span class="stmt-glyph">ف</span>
+      </div>
+      <div class="stmt">
+        <span class="stmt-n">03</span>
+        <h2 class="stmt-head">Community is not an audience. <b>It is participation.</b></h2>
+        <p class="stmt-text">Kifayat is not a gallery you visit and leave. It is a collective you belong to. Workshops, field visits, podcasts, discussions, campus chapters - a living network where everyone grows together.</p>
+        <span class="stmt-glyph">ج</span>
+      </div>
+      <div class="stmt">
+        <span class="stmt-n">04</span>
+        <h2 class="stmt-head">Art must circulate — <b>not just exist.</b></h2>
+        <p class="stmt-text">From canvas and décor to interiors, typography, merchandise, and corporate identity — calligraphy is not a niche. It is a medium that can inhabit every surface, every space that carries meaning.</p>
+        <span class="stmt-glyph">ک</span>
+      </div>
+    </div>
+  </div>
+  <div class="m-dots">
+    <div class="m-dot active" onclick="mGoTo(0)"></div>
+    <div class="m-dot" onclick="mGoTo(1)"></div>
+    <div class="m-dot" onclick="mGoTo(2)"></div>
+    <div class="m-dot" onclick="mGoTo(3)"></div>
+  </div>
+</section>
+
+<!-- ══ COMMUNITY ══ -->
+<section class="community" id="community">
+  <div class="comm-half" id="artists">
+    <div class="comm-bg-num">I</div>
+    <div class="comm-glyph">ع</div>
+    <div class="comm-inner">
+      <span class="comm-tag">The Artists</span>
+      <h2 class="comm-title">Stories<br/><em>Behind the Stroke.</em></h2>
+      <p class="comm-desc">Curated artist profiles, portfolios, and journeys - not just outcomes. We surface the people the art world overlooks.</p>
+      <div class="comm-list">
+        <span class="comm-chip">Artist Profiles</span>
+        <span class="comm-chip">Portfolios</span>
+        <span class="comm-chip">Support an Artist</span>
+        <span class="comm-chip">Campus Chapters</span>
+      </div>
+      <a href="#" class="comm-cta">Meet the Artists &nbsp;→</a>
+    </div>
+  </div>
+  <div class="comm-half" id="events">
+    <div class="comm-bg-num">II</div>
+    <div class="comm-glyph">ر</div>
+    <div class="comm-inner">
+      <span class="comm-tag">Events & Gatherings</span>
+      <h2 class="comm-title">Where Art<br/><em>Comes Alive.</em></h2>
+      <p class="comm-desc">Exhibitions, flea markets, workshops, and curated gatherings - a living calendar of cultural experiences built around calligraphy.</p>
+      <div class="comm-list">
+        <span class="comm-chip">Exhibitions</span>
+        <span class="comm-chip">Flea Markets</span>
+        <span class="comm-chip">Workshops</span>
+        <span class="comm-chip">Gatherings</span>
+      </div>
+      <a href="#" class="comm-cta">Upcoming Events &nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT WE OFFER — full section ══ -->
+<section class="offers" id="offers">
+  <div class="offers-inner sr">
+    <span class="offers-eyebrow">What We Offer</span>
+    <h2 class="offers-heading">Crafted with intention.<br><em>Made for you.</em></h2>
+    <div class="offers-grid">
+
+      <div class="cat" id="cat-decor2">
+        <div class="cat-header" onclick="toggle('cat-decor2')">
+          <span class="cat-title">Décor</span>
+          <span class="cat-arrow">+</span>
+        </div>
+        <div class="cat-body">
+          <div class="cat-body-inner">
+            <div class="cat-items">
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Canvases <span class="cat-sub">· Frame optional</span></span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Wall Art <span class="cat-sub">· Metallic · Sticker · Wooden · Paint</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat" id="cat-products2">
+        <div class="cat-header" onclick="toggle('cat-products2')">
+          <span class="cat-title">Products</span>
+          <span class="cat-arrow">+</span>
+        </div>
+        <div class="cat-body">
+          <div class="cat-body-inner">
+            <div class="cat-items">
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Wooden Boat</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Paper Box</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>T-Shirts</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Tote Bag</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Customizable Corporate Gifts</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat" id="cat-tools2">
+        <div class="cat-header" onclick="toggle('cat-tools2')">
+          <span class="cat-title">Tools</span>
+          <span class="cat-arrow">+</span>
+        </div>
+        <div class="cat-body">
+          <div class="cat-body-inner">
+            <div class="cat-items">
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Beginner's Kit</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Canvas</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Accessories</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat" id="cat-infra2">
+        <div class="cat-header" onclick="toggle('cat-infra2')">
+          <span class="cat-title">The Studio</span>
+          <span class="cat-arrow">+</span>
+        </div>
+        <div class="cat-body">
+          <div class="cat-body-inner">
+            <div class="cat-items">
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>School</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Workspace</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Artist Corner</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Exhibitions</span></a>
+              <a href="#" class="cat-item"><span class="cat-item-dot"></span><span>Workshops</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CLOSING ══ -->
+<section class="closing" id="closing">
+  <h2 class="closing-head sr">The work is<br/>the <em>invitation.</em></h2>
+  <p class="closing-sub sr d1">Whether you create, collect, learn, or simply feel - Kifayat is a place to belong.</p>
+  <div class="closing-btns sr d2">
+    <a href="#" class="btn btn-fill" onclick="document.getElementById('kfModal').classList.add('active');return false;">Join the Collective</a>
+    <a href="#" class="btn btn-ghost" onclick="document.getElementById('writeModal').classList.add('active');return false;">Write to Us</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p class="f-tag">Where every stroke tells a story.<br/><strong>Art · Community · Culture</strong></p>
+  <div class="f-social">
+    <!-- WhatsApp -->
+    <a href="https://chat.whatsapp.com/ICz1wSqz5y0Eh0KULi1uhY?mode=gi_t" target="_blank" title="Join our WhatsApp group">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/kifayat.collective" target="_blank" title="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+  </div>
+  <div class="f-bottom">
+    <span>© 2026 Kifayat Calligraphy Collective</span>
+  </div>
+</footer>
+
+<!-- ══ JOIN US POPUP ══ -->
+<div class="kf-overlay" id="kfModal">
+  <div class="kf-popup">
+    <button class="kf-close" onclick="document.getElementById('kfModal').classList.remove('active')">&#x2715;</button>
+    <div class="kf-logo-area">
+      <img src="/logo.png" alt="Kifayat Collective" onerror="this.style.display='none';document.getElementById('kf-fb').style.display='block'">
+      <div id="kf-fb" style="display:none;font-family:'EB Garamond',serif;font-size:28px;color:#c8922a;">kifayat</div>
+    </div>
+    <p class="kf-title">Join the Community</p>
+    <p class="kf-sub">For calligraphy artists &amp; enthusiasts<br>who live by the stroke.</p>
+    <div class="kf-field">
+      <label class="kf-label">Your name</label>
+      <input class="kf-input" id="kf-name" type="text" placeholder="e.g. Helen Keller" />
+    </div>
+    <div class="kf-row">
+      <div class="kf-field">
+        <label class="kf-label">City</label>
+        <input class="kf-input" id="kf-city" type="text" placeholder="e.g. Dubai" />
+      </div>
+      <div class="kf-field">
+        <label class="kf-label">I am a...</label>
+        <select class="kf-select" id="kf-role">
+          <option value="">Select</option>
+          <option value="Enthusiast">Enthusiast</option>
+          <option value="Practicing artist">Practicing artist</option>
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+        </select>
+      </div>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">Style / script interest</label>
+      <select class="kf-select" id="kf-style">
+        <option value="">Select your interest</option>
+        <option value="Arabic calligraphy">Arabic calligraphy</option>
+        <option value="Devanagari / Hindi">Devanagari / Hindi</option>
+        <option value="Latin / Western">Latin / Western</option>
+        <option value="Mixed / experimental">Mixed / experimental</option>
+        <option value="Just exploring">Just exploring</option>
+      </select>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">What brings you to Kifayat?</label>
+      <input class="kf-input" id="kf-why" type="text" placeholder="e.g. learn, collaborate, share work..." />
+    </div>
+    <button class="kf-btn" onclick="kfSend()">Send to WhatsApp &rarr;</button>
+    <p class="kf-footer">You'll be redirected to WhatsApp to complete joining</p>
+  </div>
 </div>
 
-<!-- PAGE 2: LOGIN -->
-<div class="page" id="page-login"><div class="login-page"><div class="login-card"><button class="login-back" onclick="showPage('page-site')">← Back to website</button><div class="login-logo">Sukoon<span>.</span>Academy</div><div class="login-tagline">أكاديمية سكون — Recite with peace.</div><div class="login-heading">Welcome back</div><div class="login-sub">Sign in to your dashboard</div><div class="login-error" id="login-error"></div><div class="fg"><label>Email address</label><input type="email" id="l-email" placeholder="your@email.com" autocomplete="email"/></div><div class="fg"><label>Password</label><div class="pwd-wrap"><input type="password" id="l-password" placeholder="Your password" autocomplete="current-password"/><button class="pwd-toggle" onclick="togglePwd()" type="button">👁</button></div></div><button class="login-submit" id="login-btn" onclick="doLogin()">Sign in</button></div></div></div>
+<!-- ══ WRITE TO US POPUP ══ -->
+<div class="kf-overlay" id="writeModal">
+  <div class="kf-popup">
+    <button class="kf-close" onclick="document.getElementById('writeModal').classList.remove('active')">&#x2715;</button>
+    <div class="kf-logo-area">
+      <img src="/logo.png" alt="Kifayat Collective" onerror="this.style.display='none';document.getElementById('wr-fb').style.display='block'">
+      <div id="wr-fb" style="display:none;font-family:'EB Garamond',serif;font-size:28px;color:#c8922a;">kifayat</div>
+    </div>
+    <p class="kf-title">Write to Us</p>
+    <p class="kf-sub">We'd love to hear from you.<br>Fill in what you're comfortable sharing.</p>
+    <div class="kf-field">
+      <label class="kf-label">Your name <span style="color:#444;font-size:10px;">(optional)</span></label>
+      <input class="kf-input" id="wr-name" type="text" placeholder="e.g. Name" />
+    </div>
+    <div class="kf-row">
+      <div class="kf-field">
+        <label class="kf-label">Contact no. <span style="color:#444;font-size:10px;">(optional)</span></label>
+        <input class="kf-input" id="wr-phone" type="tel" placeholder="+971 ..." />
+      </div>
+    </div>
+    <div class="kf-field">
+      <label class="kf-label">Your message</label>
+      <textarea class="kf-input" id="wr-msg" rows="4" placeholder="Tell us what's on your mind..." style="resize:vertical;font-family:inherit;line-height:1.6;"></textarea>
+    </div>
+    <button class="kf-btn" onclick="wrSend()">Send Message &rarr;</button>
+    <p class="kf-footer">This will open your email box addressed to us</p>
+  </div>
+</div>
 
-<!-- PAGE 3: STUDENT -->
-<div class="dash-page" id="page-student">
-<aside class="sidebar"><div class="sidebar-logo"><div class="sidebar-logo-text">Sukoon<span>.</span></div><div class="sidebar-logo-sub">Student Portal</div></div><div class="sidebar-section">My Learning</div><ul class="sidebar-nav"><li><a class="active" onclick="showPanel('page-student','sp-home',this)"><span class="ni">🏠</span> Home</a></li><li><a onclick="showPanel('page-student','sp-progress',this)"><span class="ni">📈</span> My Progress</a></li><li><a onclick="showPanel('page-student','sp-classes',this)"><span class="ni">🎙</span> My Classes</a></li><li><a onclick="showPanel('page-student','sp-homework',this)"><span class="ni">📋</span> Homework</a></li></ul><div class="sidebar-bottom"><div class="sidebar-user"><div class="sidebar-avatar" id="s-avatar">—</div><div><div class="sidebar-user-name" id="s-name">—</div><div class="sidebar-user-role" id="s-role">Student</div></div></div><button class="sidebar-logout" onclick="doLogout()">← Sign out</button></div></aside>
-<div class="dash-main"><div class="topbar"><div class="topbar-title">Ahlan, <em id="s-topname">—</em> 🌙</div><div class="topbar-right"><div class="topbar-date" id="today-date-s"></div><div class="topbar-pill" id="s-level-pill">Student</div></div></div><div class="dash-content">
-<div class="panel active" id="sp-home"><div class="stats-row c3"><div class="stat-card teal"><div class="sc-icon">ْ</div><div class="sc-label">Current Level</div><div class="sc-num" style="font-size:20px" id="s-stat-level">—</div><div class="sc-sub" id="s-stat-level-ar">—</div></div><div class="stat-card"><div class="sc-icon">📅</div><div class="sc-label">Batch</div><div class="sc-num" style="font-size:20px" id="s-stat-batch">—</div><div class="sc-sub">Your class group</div></div><div class="stat-card"><div class="sc-icon">🌍</div><div class="sc-label">Language</div><div class="sc-num" style="font-size:20px" id="s-stat-lang">—</div><div class="sc-sub">Class language</div></div></div><div class="g2"><div class="card"><div class="card-title" style="margin-bottom:16px">My <em>Teacher</em></div><div id="s-teacher-info"><div class="empty-state"><div class="empty-state-icon">👩‍🏫</div><div class="empty-state-title">Not yet assigned</div><p>Your teacher will be assigned after your assessment.</p></div></div></div><div class="card"><div class="card-title" style="margin-bottom:16px">Next <em>Class</em></div><div id="s-next-class"><div class="empty-state"><div class="empty-state-icon">📅</div><div class="empty-state-title">No class scheduled yet</div><p>Your first class will appear here once your batch is confirmed.</p></div></div></div></div><div class="card"><div class="card-title" style="margin-bottom:16px">Recent <em>Notes</em> from Teacher</div><div id="s-notes-list"><div class="empty-state"><div class="empty-state-icon">📝</div><div class="empty-state-title">No notes yet</div><p>Your teacher's feedback will appear here after your first class.</p></div></div></div></div>
-<div class="panel" id="sp-progress"><div class="card"><div class="card-title" style="margin-bottom:20px">My <em>Learning Journey</em></div><div id="s-progress-levels"><div class="empty-state"><div class="empty-state-icon">📈</div><div class="empty-state-title">Loading...</div></div></div></div></div>
-<div class="panel" id="sp-classes"><div class="card"><div class="card-title" style="margin-bottom:16px">My <em>Batch and Schedule</em></div><div id="s-batch-info"><div class="empty-state"><div class="empty-state-icon">👥</div><div class="empty-state-title">Batch not yet assigned</div><p>Once your assessment is complete and payment confirmed, your batch details will appear here.</p></div></div></div></div>
-<div class="panel" id="sp-homework"><div class="card"><div class="card-title" style="margin-bottom:16px">This Week's <em>Homework</em></div><div id="s-homework-info"><div class="empty-state"><div class="empty-state-icon">📋</div><div class="empty-state-title">No homework assigned yet</div><p>Your teacher will assign homework after your first class. Check here and in your WhatsApp batch group.</p></div></div></div></div>
-</div></div></div>
+<!-- ══ COMING SOON TOAST ══ -->
+<div id="cs-toast">
+  <span class="cs-emoji">✦</span>
+  <span class="cs-line1">we're still setting the ink to dry.</span>
+  <span class="cs-line2">Sign-in will be ready soon. Thank you for waiting with us</span>
+</div>
 
-<!-- PAGE 4: TEACHER -->
-<div class="dash-page" id="page-teacher">
-<aside class="sidebar"><div class="sidebar-logo"><div class="sidebar-logo-text">Sukoon<span>.</span></div><div class="sidebar-logo-sub">Teacher Portal</div></div><div class="sidebar-section">Teaching</div><ul class="sidebar-nav"><li><a class="active" onclick="showPanel('page-teacher','tp-home',this)"><span class="ni">🏠</span> Home</a></li><li><a onclick="showPanel('page-teacher','tp-batches',this)"><span class="ni">👥</span> My Batches</a></li><li><a onclick="showPanel('page-teacher','tp-attendance',this)"><span class="ni">✅</span> Attendance</a></li><li><a onclick="showPanel('page-teacher','tp-notes',this)"><span class="ni">📝</span> Progress Notes</a></li></ul><div class="sidebar-bottom"><div class="sidebar-user"><div class="sidebar-avatar" id="t-avatar">—</div><div><div class="sidebar-user-name" id="t-name">—</div><div class="sidebar-user-role">Teacher</div></div></div><button class="sidebar-logout" onclick="doLogout()">← Sign out</button></div></aside>
-<div class="dash-main"><div class="topbar"><div class="topbar-title">Ahlan, <em id="t-topname">—</em> 🌙</div><div class="topbar-right"><div class="topbar-date" id="today-date-t"></div><div class="topbar-pill" id="t-batches-pill">Teacher</div></div></div><div class="dash-content">
-<div class="panel active" id="tp-home"><div class="stats-row c3"><div class="stat-card teal"><div class="sc-icon">👥</div><div class="sc-label">My Students</div><div class="sc-num" id="t-stat-students">—</div><div class="sc-sub">across all batches</div></div><div class="stat-card"><div class="sc-icon">📚</div><div class="sc-label">My Batches</div><div class="sc-num" id="t-stat-batches">—</div><div class="sc-sub">active this month</div></div><div class="stat-card"><div class="sc-icon">📝</div><div class="sc-label">Notes Added</div><div class="sc-num" id="t-stat-notes">—</div><div class="sc-sub">total progress notes</div></div></div><div class="card"><div class="card-title" style="margin-bottom:16px">My <em>Students</em></div><div id="t-students-list"><div class="empty-state"><div class="empty-state-icon">👨‍🎓</div><div class="empty-state-title">No students assigned yet</div><p>Students will appear here once batches are assigned by the admin.</p></div></div></div></div>
-<div class="panel" id="tp-batches"><div class="card"><div class="card-title" style="margin-bottom:16px">My <em>Batches</em></div><div id="t-batches-list"><div class="empty-state"><div class="empty-state-icon">📚</div><div class="empty-state-title">No batches assigned yet</div></div></div></div></div>
-<div class="panel" id="tp-attendance"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px"><div class="card-title">Mark <em>Attendance</em></div><select id="t-att-batch" onchange="loadAttendanceStudents()" style="width:auto;min-width:200px;font-size:13px;padding:8px 36px 8px 12px"><option value="">Select batch</option></select></div><div id="t-attendance-list"><div class="empty-state"><div class="empty-state-icon">✅</div><div class="empty-state-title">Select a batch above</div></div></div><div id="t-att-save-wrap" style="display:none;margin-top:16px"><button class="btn btn-primary" style="width:100%;justify-content:center" onclick="saveAttendance()">Save Attendance</button></div></div></div>
-<div class="panel" id="tp-notes"><div class="g2"><div class="card"><div class="card-title" style="margin-bottom:16px">Add <em>Progress Note</em></div><div class="fg"><label>Select student</label><select id="t-note-student"><option value="">Select student</option></select></div><div class="fg"><label>Note</label><textarea class="note-textarea" id="t-note-text" placeholder="e.g. MashaAllah, ghunnah has improved..."></textarea></div><button class="btn btn-primary" style="width:100%;justify-content:center" onclick="saveTeacherNote()">Save Note</button></div><div class="card"><div class="card-title" style="margin-bottom:16px">Recent <em>Notes</em></div><div id="t-notes-list"><div class="empty-state"><div class="empty-state-icon">📝</div><div class="empty-state-title">No notes yet</div></div></div></div></div></div>
-</div></div></div>
-
-<!-- PAGE 5: ADMIN -->
-<div class="dash-page" id="page-admin">
-<aside class="sidebar"><div class="sidebar-logo"><div class="sidebar-logo-text">Sukoon<span>.</span></div><div class="sidebar-logo-sub">Admin Portal</div></div><div class="sidebar-section">Management</div><ul class="sidebar-nav"><li><a class="active" onclick="showPanel('page-admin','ap-home',this)"><span class="ni">🏠</span> Overview</a></li><li><a onclick="showPanel('page-admin','ap-registrations',this)"><span class="ni">🔔</span> Registrations</a></li><li><a onclick="showPanel('page-admin','ap-students',this)"><span class="ni">🎓</span> Students</a></li><li><a onclick="showPanel('page-admin','ap-teachers',this)"><span class="ni">📖</span> Teachers</a></li><li><a onclick="showPanel('page-admin','ap-batches',this)"><span class="ni">👥</span> Batches</a></li><li><a onclick="showPanel('page-admin','ap-revenue',this)"><span class="ni">💰</span> Revenue</a></li></ul><div class="sidebar-bottom"><div class="sidebar-user"><div class="sidebar-avatar" id="a-avatar">A</div><div><div class="sidebar-user-name" id="a-name">Admin</div><div class="sidebar-user-role">Full access</div></div></div><button class="sidebar-logout" onclick="doLogout()">← Sign out</button></div></aside>
-<div class="dash-main"><div class="topbar"><div class="topbar-title">Sukoon <em>Admin</em> 🛡️</div><div class="topbar-right"><div class="topbar-date" id="today-date-a"></div><div class="topbar-pill">Full Access</div></div></div><div class="dash-content">
-<div class="panel active" id="ap-home"><div class="stats-row c4"><div class="stat-card teal"><div class="sc-icon">🎓</div><div class="sc-label">Students</div><div class="sc-num" id="a-stat-students">—</div><div class="sc-sub">enrolled</div></div><div class="stat-card"><div class="sc-icon">📖</div><div class="sc-label">Teachers</div><div class="sc-num" id="a-stat-teachers">—</div><div class="sc-sub">active</div></div><div class="stat-card"><div class="sc-icon">👥</div><div class="sc-label">Batches</div><div class="sc-num" id="a-stat-batches">—</div><div class="sc-sub">running</div></div><div class="stat-card gold"><div class="sc-icon">🔔</div><div class="sc-label">New Registrations</div><div class="sc-num" id="a-stat-regs">—</div><div class="sc-sub">pending review</div></div></div><div class="info-box"><div class="info-box-title">Getting Started</div><p>Add teachers first, then create batches and assign students. New website registrations appear in the Registrations tab automatically.</p></div><div class="g2"><div class="card"><div class="card-title" style="margin-bottom:16px">Recent <em>Registrations</em></div><div id="a-recent-regs"><div class="empty-state"><div class="empty-state-icon">🔔</div><div class="empty-state-title">No registrations yet</div></div></div></div><div class="card"><div class="card-title" style="margin-bottom:16px">Students by <em>Level</em></div><div id="a-level-breakdown"><div class="empty-state"><div class="empty-state-icon">📊</div><div class="empty-state-title">No students yet</div></div></div></div></div></div>
-<div class="panel" id="ap-registrations"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px"><div class="card-title">Website <em>Registrations</em></div><button class="btn btn-ghost btn-sm" onclick="loadAdminData()">↻ Refresh</button></div><div id="a-regs-list"><div class="empty-state"><div class="empty-state-icon">🔔</div><div class="empty-state-title">No registrations yet</div><p>When someone fills your registration form, they appear here.</p></div></div></div></div>
-<div class="panel" id="ap-students"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px"><div class="card-title">All <em>Students</em></div><button class="btn btn-primary btn-sm" onclick="openModal('modal-add-student')">+ Add Student</button></div><div id="a-students-table"><div class="empty-state"><div class="empty-state-icon">🎓</div><div class="empty-state-title">No students yet</div><p>Add your first student using the button above.</p></div></div></div></div>
-<div class="panel" id="ap-teachers"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px"><div class="card-title">All <em>Teachers</em></div><button class="btn btn-primary btn-sm" onclick="openModal('modal-add-teacher')">+ Add Teacher</button></div><div id="a-teachers-list"><div class="empty-state"><div class="empty-state-icon">📖</div><div class="empty-state-title">No teachers yet</div><p>Add your first teacher using the button above.</p></div></div></div></div>
-<div class="panel" id="ap-batches"><div class="card"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px"><div class="card-title">All <em>Batches</em></div><button class="btn btn-primary btn-sm" onclick="openModal('modal-add-batch')">+ Add Batch</button></div><div id="a-batches-list"><div class="empty-state"><div class="empty-state-icon">👥</div><div class="empty-state-title">No batches yet</div></div></div></div></div>
-<div class="panel" id="ap-revenue"><div class="stats-row c3"><div class="stat-card teal"><div class="sc-label">Paid Students</div><div class="sc-num" id="r-paid">—</div></div><div class="stat-card"><div class="sc-label">Pending Payment</div><div class="sc-num" id="r-pending">—</div></div><div class="stat-card gold"><div class="sc-label">Est. Monthly Revenue</div><div class="sc-num" id="r-revenue">—</div></div></div><div class="card"><div class="card-title" style="margin-bottom:16px">Payment <em>Status</em></div><div id="a-revenue-table"><div class="empty-state"><div class="empty-state-icon">💰</div><div class="empty-state-title">No data yet</div></div></div></div></div>
-</div></div></div>
 <script>
-'use strict';
-var SUPA_URL='https://evxeeggmpbifyxlbxptz.supabase.co';
-var SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2eGVlZ2dtcGJpZnl4bGJ4cHR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQzNTAyMTksImV4cCI6MjA4OTkyNjIxOX0.EXneS-8CpnP8LfjUxEJwblZdZzKtEJU1XwTQBmyNmAE';
-var currentUser=null,currentProfile=null,currentSession=null;
-
-async function supa(method,path,body){
-  var opts={method:method,headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+(currentSession?currentSession.access_token:SUPA_KEY),'Content-Type':'application/json','Prefer':method==='POST'?'return=representation':''}};
-  if(body)opts.body=JSON.stringify(body);
-  var res=await fetch(SUPA_URL+path,opts);
-  if(res.status===204)return null;
-  return res.json();
-}
-async function supaAuth(path,body){
-  var res=await fetch(SUPA_URL+'/auth/v1'+path,{method:'POST',headers:{'apikey':SUPA_KEY,'Content-Type':'application/json'},body:JSON.stringify(body)});
-  return res.json();
+/* ── coming soon toast ── */
+function showComingSoon(){
+  const t = document.getElementById('cs-toast');
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>t.classList.remove('show'), 3800);
 }
 
-function showToast(msg,type){var t=document.getElementById('toast');t.textContent=msg;t.className='toast '+(type||'')+' show';setTimeout(function(){t.classList.remove('show');},3200);}
-function showPage(id){document.querySelectorAll('.page,.dash-page').forEach(function(p){p.classList.remove('active');});document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
-function showPanel(pageId,panelId,el){var pg=document.getElementById(pageId);pg.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});pg.querySelectorAll('.sidebar-nav a').forEach(function(a){a.classList.remove('active');});document.getElementById(panelId).classList.add('active');if(el)el.classList.add('active');}
-function openModal(id){document.getElementById(id).classList.add('open');}
-function closeModal(id){document.getElementById(id).classList.remove('open');}
-document.querySelectorAll('.modal-overlay').forEach(function(o){o.addEventListener('click',function(e){if(e.target===o)o.classList.remove('open');});});
-document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(function(m){m.classList.remove('open');});});
-function setDates(){var d=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});['today-date-s','today-date-t','today-date-a'].forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=d;});}
-setDates();
-function toggleAcc(t){var b=t.nextElementSibling;var o=t.classList.contains('open');t.classList.toggle('open',!o);b.classList.toggle('open',!o);}
-function goToSection(id){var el=document.getElementById(id);if(!el)return;var t=el.querySelector('.accordion-trigger'),b=t?t.nextElementSibling:null;if(t&&!t.classList.contains('open')){t.classList.add('open');if(b)b.classList.add('open');}setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},100);}
-function togglePwd(){var i=document.getElementById('l-password');i.type=i.type==='password'?'text':'password';}
-
-var rates={INR:{sym:'₹',kids:800,adults:1000,note:'Showing price in Indian Rupees'},AED:{sym:'AED ',kids:50,adults:80,note:'Showing price in UAE Dirhams',inrKids:1125,inrAdults:1800},SAR:{sym:'SAR ',kids:50,adults:80,note:'Showing price in Saudi Riyals',inrKids:1125,inrAdults:1800},QAR:{sym:'QAR ',kids:50,adults:80,note:'Showing price in Qatari Riyals',inrKids:1150,inrAdults:1840},KWD:{sym:'KWD ',kids:4,adults:7,note:'Showing price in Kuwaiti Dinars',inrKids:1100,inrAdults:1925},BHD:{sym:'BHD ',kids:5,adults:8,note:'Showing price in Bahraini Dinars',inrKids:1100,inrAdults:1760},OMR:{sym:'OMR ',kids:5,adults:8,note:'Showing price in Omani Riyals',inrKids:1100,inrAdults:1760}};
-window.detectedCurrency='AED';
-function setCurrency(c){window.detectedCurrency=c;var r=rates[c];document.getElementById('sym-kids').textContent=r.sym;document.getElementById('amt-kids').textContent=r.kids;document.getElementById('sym-adults').textContent=r.sym;document.getElementById('amt-adults').textContent=r.adults;document.getElementById('fx-note').textContent=r.note;var ir=document.getElementById('inr-equiv');if(c!=='INR'&&r.inrKids){ir.style.display='block';ir.innerHTML='Approx. ₹'+r.inrKids+' for kids · ₹'+r.inrAdults+' for adults';}else{ir.style.display='none';}document.querySelectorAll('[data-curr]').forEach(function(b){var a=b.dataset.curr===c;b.style.background=a?'var(--teal)':'transparent';b.style.color=a?'#fff':'var(--teal)';b.style.borderColor=a?'var(--teal)':'rgba(27,77,62,.25)';});}
-fetch('https://ipapi.co/json/').then(function(r){return r.json();}).then(function(d){var map={IN:'INR',AE:'AED',SA:'SAR',QA:'QAR',KW:'KWD',BH:'BHD',OM:'OMR'};var code=map[d.country_code]||'AED';window.detectedCurrency=code;var isIndia=d.country_code==='IN';var bw=document.getElementById('currency-buttons');if(!isIndia){var cur=['AED','SAR','QAR','KWD','BHD','OMR'];var fl={AED:'🇦🇪',SAR:'🇸🇦',QAR:'🇶🇦',KWD:'🇰🇼',BHD:'🇧🇭',OMR:'🇴🇲'};cur.forEach(function(c){var btn=document.createElement('button');btn.dataset.curr=c;btn.textContent=fl[c]+' '+c;btn.style.cssText='padding:7px 16px;border-radius:999px;border:1.5px solid rgba(27,77,62,.25);background:transparent;color:var(--teal);font-size:13px;font-weight:500;cursor:pointer;font-family:DM Sans,sans-serif;transition:all .2s;';btn.onclick=function(){setCurrency(c);};bw.appendChild(btn);});bw.style.display='flex';document.getElementById('fx-note').style.display='block';}setCurrency(code);}).catch(function(){setCurrency('AED');});
-
-async function submitRegistration(){
-  var name=document.getElementById('f-name').value.trim(),age=document.getElementById('f-age').value.trim();
-  if(!name||!age){showToast('Please fill in your name and age.','error');return;}
-  var btn=document.getElementById('f-submit');btn.disabled=true;btn.innerHTML='<span class="spinner"></span> Saving...';
-  try{
-    await supa('POST','/rest/v1/registrations',{name:name,age:parseInt(age),level:document.getElementById('f-level').value,preferred_time:document.getElementById('f-time').value,language:document.getElementById('f-lang').value,notes:document.getElementById('f-notes').value.trim(),currency:window.detectedCurrency,status:'new'});
-    var r=rates[window.detectedCurrency]||rates.AED;var isKid=parseInt(age)<=16;
-    var grp=isKid?'Child (Age 5-16) — '+r.sym+r.kids+'/month':'Adult (Age 17+) — '+r.sym+r.adults+'/month';
-    var msg='*New Registration — Sukoon Academy*\n\n*Name:* '+name+'\n*Age:* '+age+'\n*Level:* '+document.getElementById('f-level').value+'\n*Group:* '+grp+'\n*Preferred time:* '+document.getElementById('f-time').value+'\n*Language:* '+document.getElementById('f-lang').value+(document.getElementById('f-notes').value.trim()?'\n*Notes:* '+document.getElementById('f-notes').value.trim():'');
-    btn.innerHTML='JazakAllah khair! Opening WhatsApp... 🌙';btn.style.background='#1D9E75';
-    setTimeout(function(){window.open('https://wa.me/918943015958?text='+encodeURIComponent(msg),'_blank');btn.disabled=false;btn.textContent='Submit my registration';btn.style.background='';},1200);
-  }catch(e){showToast('Something went wrong. Please try again.','error');btn.disabled=false;btn.textContent='Submit my registration';}
+/* ── cursor ── */
+function wrSend(){
+  var name  = document.getElementById('wr-name').value.trim();
+  var email = document.getElementById('wr-email').value.trim();
+  var phone = document.getElementById('wr-phone').value.trim();
+  var msg   = document.getElementById('wr-msg').value.trim();
+  if(!msg){ alert('Please write a message before sending.'); return; }
+  var body = '';
+  if(name)  body += 'Name: ' + name + '\n';
+  if(email) body += 'Email: ' + email + '\n';
+  if(phone) body += 'Contact: ' + phone + '\n';
+  body += '\n' + msg;
+  var subject = encodeURIComponent('Message from Kifayat Collective Website');
+  var bodyEnc = encodeURIComponent(body);
+  window.location.href = 'mailto:kifayat.calli@gmail.com?subject=' + subject + '&body=' + bodyEnc;
 }
 
-document.getElementById('l-password').addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
-document.getElementById('l-email').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('l-password').focus();});
 
-async function doLogin(){
-  var email=document.getElementById('l-email').value.trim(),pwd=document.getElementById('l-password').value;
-  var errEl=document.getElementById('login-error');errEl.classList.remove('show');
-  if(!email||!pwd){errEl.textContent='Please enter your email and password.';errEl.classList.add('show');return;}
-  var btn=document.getElementById('login-btn');btn.disabled=true;btn.innerHTML='<span class="spinner"></span>';
-  try{
-    var data=await supaAuth('/token?grant_type=password',{email:email,password:pwd});
-    if(data.error||!data.access_token){errEl.textContent='Incorrect email or password. Please try again.';errEl.classList.add('show');btn.disabled=false;btn.textContent='Sign in';return;}
-    currentSession=data;currentUser=data.user;
-    var profile=await supa('GET','/rest/v1/profiles?id=eq.'+currentUser.id+'&select=*');
-    if(!profile||!profile.length){errEl.textContent='Account setup incomplete. Please contact admin.';errEl.classList.add('show');btn.disabled=false;btn.textContent='Sign in';return;}
-    currentProfile=profile[0];
-    var init=(currentProfile.name||'?').split(' ').map(function(w){return w[0];}).join('').substring(0,2).toUpperCase();
-    if(currentProfile.role==='admin'){document.getElementById('a-name').textContent=currentProfile.name;document.getElementById('a-avatar').textContent=init;showPage('page-admin');loadAdminData();}
-    else if(currentProfile.role==='teacher'){document.getElementById('t-name').textContent=currentProfile.name;document.getElementById('t-topname').textContent=currentProfile.name.split(' ')[0];document.getElementById('t-avatar').textContent=init;showPage('page-teacher');loadTeacherData();}
-    else{document.getElementById('s-name').textContent=currentProfile.name;document.getElementById('s-topname').textContent=currentProfile.name.split(' ')[0];document.getElementById('s-avatar').textContent=init;showPage('page-student');loadStudentData();}
-  }catch(e){errEl.textContent='Could not connect. Please check your internet and try again.';errEl.classList.add('show');btn.disabled=false;btn.textContent='Sign in';}
-}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const id = this.getAttribute('href').slice(1);
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const navH = 56;
+    const top = target.getBoundingClientRect().top + window.scrollY - navH;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
 
-function doLogout(){currentUser=null;currentProfile=null;currentSession=null;document.getElementById('l-email').value='';document.getElementById('l-password').value='';showPage('page-login');}
 
-async function loadStudentData(){
-  if(!currentProfile)return;
-  try{
-    var st=await supa('GET','/rest/v1/students?id=eq.'+currentProfile.linked_id+'&select=*');
-    if(!st||!st.length)return;
-    var s=st[0];
-    var lmap={'Noorani — Level 1':'نوراني','Mubtadi — Level 2':'مبتدئ','Mutawassit — Level 3':'متوسط','Mutaqaddim — Level 4':'متقدم','Mujawwad — Level 5':'مجوَّد'};
-    document.getElementById('s-stat-level').textContent=(s.level||'').split(' — ')[0]||'—';
-    document.getElementById('s-stat-level-ar').textContent=lmap[s.level]||'—';
-    document.getElementById('s-level-pill').textContent=s.level||'Student';
-    document.getElementById('s-role').textContent=s.level||'Student';
-    document.getElementById('s-stat-lang').textContent=s.language||'—';
-    var levels=['Noorani — Level 1','Mubtadi — Level 2','Mutawassit — Level 3','Mutaqaddim — Level 4','Mujawwad — Level 5'];
-    var cur=levels.indexOf(s.level);var html='';
-    levels.forEach(function(l,i){var done=i<cur,active=i===cur;html+='<div style="margin-bottom:16px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px"><span style="font-size:13px;font-weight:'+(active?600:400)+';color:'+(done||active?'var(--charcoal)':'var(--muted)')+'">'+l+'</span>';if(done)html+='<span class="badge bg">Completed</span>';else if(active)html+='<span class="badge bteal">In Progress</span>';else html+='<span class="badge bgrey">Upcoming</span>';html+='</div><div class="prog-bar"><div class="prog-fill" style="width:'+(done?100:active?50:0)+'%"></div></div></div>';});
-    document.getElementById('s-progress-levels').innerHTML=html;
-    if(s.batch_id){var ba=await supa('GET','/rest/v1/batches?id=eq.'+s.batch_id+'&select=*');if(ba&&ba.length){var b=ba[0];document.getElementById('s-stat-batch').textContent=b.name||'—';document.getElementById('s-batch-info').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px"><div style="background:var(--teal-pale);border-radius:12px;padding:16px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px">Class day</div><div style="font-size:15px;font-weight:600;color:var(--teal)">'+(b.class_day||'—')+'</div></div><div style="background:var(--gold-light);border-radius:12px;padding:16px"><div style="font-size:11px;color:#8B6914;text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px">Time</div><div style="font-size:15px;font-weight:600;color:#8B6914">'+(b.class_time||'—')+'</div></div></div>';}}
-    var notes=await supa('GET','/rest/v1/progress_notes?student_id=eq.'+s.id+'&order=created_at.desc&limit=5&select=*');
-    if(notes&&notes.length){var nh='<div class="timeline">';notes.forEach(function(n){nh+='<div class="tl-item"><div class="tl-dot">📝</div><div><div class="tl-title">'+new Date(n.created_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+'</div><div class="tl-sub">'+n.note+'</div></div></div>';});nh+='</div>';document.getElementById('s-notes-list').innerHTML=nh;}
-  }catch(e){console.error('Student data:',e);}
+const cd=document.getElementById('cd'), cr=document.getElementById('cr');
+let mx=0, my=0, rx=0, ry=0;
+document.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; cd.style.left=mx+'px'; cd.style.top=my+'px'; });
+(function loop(){ rx+=(mx-rx)*.11; ry+=(my-ry)*.11; cr.style.left=rx+'px'; cr.style.top=ry+'px'; requestAnimationFrame(loop); })();
+document.querySelectorAll('a,button,[onclick]').forEach(el=>{
+  el.addEventListener('mouseenter', ()=>{ cd.style.width='14px'; cd.style.height='14px'; cr.style.width='42px'; cr.style.height='42px'; cr.style.opacity='.25'; });
+  el.addEventListener('mouseleave', ()=>{ cd.style.width='6px';  cd.style.height='6px';  cr.style.width='28px'; cr.style.height='28px'; cr.style.opacity='1'; });
+});
+
+/* ── nav scroll ── */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll', ()=>nav.classList.toggle('on', scrollY>50), {passive:true});
+
+/* ── accordion ── */
+function toggle(id) {
+  const el=document.getElementById(id);
+  const isOpen=el.classList.contains('open');
+  document.querySelectorAll('.cat').forEach(c=>c.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
 }
 
-async function loadTeacherData(){
-  if(!currentProfile)return;
-  try{
-    var tr=await supa('GET','/rest/v1/teachers?id=eq.'+currentProfile.linked_id+'&select=*');
-    if(!tr||!tr.length)return;
-    var teacher=tr[0];
-    var batches=await supa('GET','/rest/v1/batches?teacher_id=eq.'+teacher.id+'&select=*')||[];
-    document.getElementById('t-stat-batches').textContent=batches.length;
-    document.getElementById('t-batches-pill').textContent=batches.length+(batches.length===1?' Batch':' Batches');
-    var students=[];
-    if(batches.length){var bids=batches.map(function(b){return b.id;});var sl=await supa('GET','/rest/v1/students?batch_id=in.('+bids.join(',')+ ')&select=*');if(sl)students=sl;}
-    document.getElementById('t-stat-students').textContent=students.length;
-    var allN=await supa('GET','/rest/v1/progress_notes?teacher_id=eq.'+teacher.id+'&select=id');
-    document.getElementById('t-stat-notes').textContent=allN?allN.length:0;
-    if(students.length){var sh='';students.forEach(function(s){var i=s.name.split(' ').map(function(w){return w[0];}).join('').substring(0,2).toUpperCase();sh+='<div class="user-row"><div class="user-avatar">'+i+'</div><div><div class="user-name">'+s.name+'</div><div class="user-detail">'+s.level+' · '+(s.country||'')+'</div></div><span class="badge bg" style="margin-left:auto">Active</span></div>';});document.getElementById('t-students-list').innerHTML=sh;var opts='<option value="">Select student</option>';students.forEach(function(s){opts+='<option value="'+s.id+'">'+s.name+'</option>';});document.getElementById('t-note-student').innerHTML=opts;}
-    if(batches.length){var bh='';batches.forEach(function(b){bh+='<div style="padding:16px;background:var(--cream);border-radius:14px;border:1px solid var(--border);margin-bottom:10px"><div style="font-weight:600;font-size:14px;margin-bottom:4px">'+b.name+'</div><div style="font-size:12px;color:var(--muted)">'+b.class_day+' · '+b.class_time+' · '+b.level+'</div></div>';});document.getElementById('t-batches-list').innerHTML=bh;var ao='<option value="">Select batch</option>';batches.forEach(function(b){ao+='<option value="'+b.id+'">'+b.name+'</option>';});document.getElementById('t-att-batch').innerHTML=ao;}
-    var notes=await supa('GET','/rest/v1/progress_notes?teacher_id=eq.'+teacher.id+'&order=created_at.desc&limit=10&select=*');
-    if(notes&&notes.length){var nh='<div class="timeline">';notes.forEach(function(n){nh+='<div class="tl-item"><div class="tl-dot">📝</div><div><div class="tl-title">'+new Date(n.created_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+'</div><div class="tl-sub">'+n.note+'</div></div></div>';});nh+='</div>';document.getElementById('t-notes-list').innerHTML=nh;}
-  }catch(e){console.error('Teacher data:',e);}
+/* ── manifesto slider ── */
+let mIdx=0;
+const mTotal=4;
+const mTrack=document.getElementById('mTrack');
+const mCount=document.getElementById('mCount');
+const mDots=document.querySelectorAll('.m-dot');
+function mRender(){
+  const card=mTrack.querySelector('.stmt');
+  const w=card.offsetWidth+24;
+  mTrack.style.transform=`translateX(-${mIdx*w}px)`;
+  mCount.textContent=`${mIdx+1} / ${mTotal}`;
+  mDots.forEach((d,i)=>d.classList.toggle('active', i===mIdx));
+}
+function mSlide(dir){ mIdx=Math.max(0,Math.min(mTotal-1,mIdx+dir)); mRender(); }
+function mGoTo(i){ mIdx=i; mRender(); }
+window.addEventListener('resize', mRender);
+let mDragStart=null;
+const mWrap=document.getElementById('mWrap');
+mWrap.addEventListener('mousedown',  e=>{ mDragStart=e.clientX; });
+mWrap.addEventListener('touchstart', e=>{ mDragStart=e.touches[0].clientX; }, {passive:true});
+mWrap.addEventListener('mouseup',  e=>{ if(mDragStart!==null){ const d=mDragStart-e.clientX; if(Math.abs(d)>40) mSlide(d>0?1:-1); mDragStart=null; } });
+mWrap.addEventListener('touchend', e=>{ if(mDragStart!==null){ const d=mDragStart-e.changedTouches[0].clientX; if(Math.abs(d)>40) mSlide(d>0?1:-1); mDragStart=null; } });
+
+/* ── scroll reveal ── */
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); }), {threshold:.08});
+document.querySelectorAll('.sr').forEach(el=>io.observe(el));
+
+/* ── popup WhatsApp ── */
+function kfSend(){
+  var name=document.getElementById('kf-name').value.trim();
+  var city=document.getElementById('kf-city').value.trim();
+  var role=document.getElementById('kf-role').value;
+  var style=document.getElementById('kf-style').value;
+  var why=document.getElementById('kf-why').value.trim();
+  if(!name||!role||!style){ alert('Please fill in your name, role and style interest.'); return; }
+  var msg="Hi Kifayat Collective! I'd like to join the community.%0A%0A"
+    +"*Name:* "+encodeURIComponent(name)+"%0A"
+    +(city?"*City:* "+encodeURIComponent(city)+"%0A":"")
+    +"*I am a:* "+encodeURIComponent(role)+"%0A"
+    +"*Style interest:* "+encodeURIComponent(style)+"%0A"
+    +(why?"*What brings me:* "+encodeURIComponent(why):"");
+  window.open("https://wa.me/918943015958?text="+msg,"_blank");
 }
 
-async function loadAttendanceStudents(){
-  var bid=document.getElementById('t-att-batch').value;
-  var listEl=document.getElementById('t-attendance-list');var sw=document.getElementById('t-att-save-wrap');
-  if(!bid){listEl.innerHTML='<div class="empty-state"><div class="empty-state-icon">✅</div><div class="empty-state-title">Select a batch above</div></div>';sw.style.display='none';return;}
-  try{
-    var st=await supa('GET','/rest/v1/students?batch_id=eq.'+bid+'&select=*');
-    if(!st||!st.length){listEl.innerHTML='<div class="empty-state"><div class="empty-state-icon">👤</div><div class="empty-state-title">No students in this batch</div></div>';sw.style.display='none';return;}
-    var html='';
-    st.forEach(function(s){var i=s.name.split(' ').map(function(w){return w[0];}).join('').substring(0,2).toUpperCase();html+='<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:var(--cream);border-radius:12px;border:1px solid var(--border);margin-bottom:8px" data-sid="'+s.id+'"><div style="display:flex;align-items:center;gap:10px"><div class="user-avatar">'+i+'</div><div class="user-name">'+s.name+'</div></div><div class="att-toggle"><button class="att-btn" onclick="markAtt(this,\'present\')">Present</button><button class="att-btn" onclick="markAtt(this,\'absent\')">Absent</button></div></div>';});
-    listEl.innerHTML=html;sw.style.display='block';
-  }catch(e){console.error('Att load:',e);}
-}
-function markAtt(btn,status){var w=btn.parentElement;w.querySelectorAll('.att-btn').forEach(function(b){b.classList.remove('present','absent');});btn.classList.add(status);}
-
-async function saveAttendance(){
-  var rows=document.querySelectorAll('#t-attendance-list [data-sid]');var today=new Date().toISOString().split('T')[0];var records=[];
-  rows.forEach(function(row){var sid=row.dataset.sid;var pb=row.querySelector('.att-btn.present'),ab=row.querySelector('.att-btn.absent');if(pb||ab)records.push({student_id:sid,date:today,status:pb?'present':'absent',teacher_id:currentProfile.linked_id});});
-  if(!records.length){showToast('Mark at least one student.','error');return;}
-  try{await supa('POST','/rest/v1/attendance',records);showToast('Attendance saved! JazakAllah khair 🌙','success');}
-  catch(e){showToast('Could not save. Please try again.','error');}
-}
-
-async function saveTeacherNote(){
-  var sid=document.getElementById('t-note-student').value,note=document.getElementById('t-note-text').value.trim();
-  if(!sid||!note){showToast('Please select a student and write a note.','error');return;}
-  try{await supa('POST','/rest/v1/progress_notes',{student_id:sid,note:note,teacher_id:currentProfile.linked_id});document.getElementById('t-note-text').value='';showToast('Note saved! 🌙','success');loadTeacherData();}
-  catch(e){showToast('Could not save. Please try again.','error');}
-}
-
-async function loadAdminData(){
-  try{
-    var results=await Promise.all([supa('GET','/rest/v1/students?select=*'),supa('GET','/rest/v1/teachers?select=*'),supa('GET','/rest/v1/batches?select=*'),supa('GET','/rest/v1/registrations?order=created_at.desc&select=*')]);
-    var students=results[0]||[],teachers=results[1]||[],batches=results[2]||[],regs=results[3]||[];
-    var newRegs=regs.filter(function(r){return r.status==='new';});
-    document.getElementById('a-stat-students').textContent=students.length;
-    document.getElementById('a-stat-teachers').textContent=teachers.length;
-    document.getElementById('a-stat-batches').textContent=batches.length;
-    document.getElementById('a-stat-regs').textContent=newRegs.length;
-    if(regs.length){var rh='';regs.slice(0,3).forEach(function(r){rh+='<div class="user-row"><div class="user-avatar">'+r.name[0].toUpperCase()+'</div><div><div class="user-name">'+r.name+'</div><div class="user-detail">Age '+r.age+' · '+r.language+' · '+r.preferred_time+'</div></div><span class="badge bgold" style="margin-left:auto">New</span></div>';});document.getElementById('a-recent-regs').innerHTML=rh;}
-    if(regs.length){var regsHtml='<div class="tscroll"><table><thead><tr><th>Name</th><th>Age</th><th>Level</th><th>Time</th><th>Language</th><th>Currency</th><th>Notes</th><th>Status</th></tr></thead><tbody>';regs.forEach(function(r){regsHtml+='<tr><td style="font-weight:500">'+r.name+'</td><td>'+r.age+'</td><td>'+(r.level||'—')+'</td><td>'+(r.preferred_time||'—')+'</td><td>'+(r.language||'—')+'</td><td>'+(r.currency||'—')+'</td><td style="max-width:160px;font-size:12px;color:var(--muted)">'+(r.notes||'—')+'</td><td><span class="badge '+(r.status==='new'?'bgold':'bg')+'">'+r.status+'</span></td></tr>';});regsHtml+='</tbody></table></div>';document.getElementById('a-regs-list').innerHTML=regsHtml;}
-    if(students.length){var lc={};students.forEach(function(s){lc[s.level]=(lc[s.level]||0)+1;});var lh='';Object.keys(lc).forEach(function(l){var pct=Math.round(lc[l]/students.length*100);lh+='<div style="margin-bottom:14px"><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px"><span>'+l+'</span><span style="font-weight:600;color:var(--teal)">'+lc[l]+'</span></div><div class="prog-bar"><div class="prog-fill" style="width:'+pct+'%"></div></div></div>';});document.getElementById('a-level-breakdown').innerHTML=lh;
-    var sth='<div class="tscroll"><table><thead><tr><th>Name</th><th>Age</th><th>Level</th><th>Country</th><th>Language</th><th>Payment</th><th>Action</th></tr></thead><tbody>';students.forEach(function(s){sth+='<tr><td style="font-weight:500">'+s.name+'</td><td>'+(s.age||'—')+'</td><td>'+(s.level||'—')+'</td><td>'+(s.country||'—')+'</td><td>'+(s.language||'—')+'</td><td>'+(s.payment_status==='paid'?'<span class="badge bg">'+(s.payment_amount||'Paid')+'</span>':'<span class="badge bgold">Pending</span>')+'</td><td><button class="btn btn-danger btn-sm" onclick="deleteStudent(\''+s.id+'\')">Delete</button></td></tr>';});sth+='</tbody></table></div>';document.getElementById('a-students-table').innerHTML=sth;}
-    if(teachers.length){var th='';teachers.forEach(function(t){var i=t.name.split(' ').map(function(w){return w[0];}).join('').substring(0,2).toUpperCase();th+='<div class="user-row"><div class="user-avatar" style="background:var(--gold-light);color:#8B6914">'+i+'</div><div><div class="user-name">'+t.name+'</div><div class="user-detail">'+(t.email||'')+' '+(t.phone?'· '+t.phone:'')+'</div></div><div class="user-actions"><button class="btn btn-danger btn-sm" onclick="deleteTeacher(\''+t.id+'\')">Delete</button></div></div>';});document.getElementById('a-teachers-list').innerHTML=th;}
-    if(batches.length){var bh='';batches.forEach(function(b){bh+='<div style="padding:16px;background:var(--cream);border-radius:14px;border:1px solid var(--border);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between"><div><div style="font-weight:600;font-size:14px;margin-bottom:4px">'+b.name+'</div><div style="font-size:12px;color:var(--muted)">'+b.class_day+' · '+b.class_time+' · '+b.level+'</div></div><button class="btn btn-danger btn-sm" onclick="deleteBatch(\''+b.id+'\')">Delete</button></div>';});document.getElementById('a-batches-list').innerHTML=bh;}
-    var paid=students.filter(function(s){return s.payment_status==='paid';});var pend=students.filter(function(s){return s.payment_status!=='paid';});
-    document.getElementById('r-paid').textContent=paid.length;document.getElementById('r-pending').textContent=pend.length;document.getElementById('r-revenue').textContent=paid.length?'~AED '+(paid.length*65):'—';
-    if(students.length){var rvh='<div class="tscroll"><table><thead><tr><th>Name</th><th>Level</th><th>Payment</th><th>Amount</th></tr></thead><tbody>';students.forEach(function(s){rvh+='<tr><td>'+s.name+'</td><td>'+(s.level||'—')+'</td><td>'+(s.payment_status==='paid'?'<span class="badge bg">Paid</span>':'<span class="badge bgold">Pending</span>')+'</td><td>'+(s.payment_amount||'—')+'</td></tr>';});rvh+='</tbody></table></div>';document.getElementById('a-revenue-table').innerHTML=rvh;}
-  }catch(e){console.error('Admin data:',e);showToast('Could not load data.','error');}
-}
-
-async function saveStudent(){
-  var name=document.getElementById('ms-name').value.trim();if(!name){showToast('Please enter a name.','error');return;}
-  try{await supa('POST','/rest/v1/students',{name:name,age:parseInt(document.getElementById('ms-age').value)||null,level:document.getElementById('ms-level').value,country:document.getElementById('ms-country').value,language:document.getElementById('ms-lang').value,payment_status:document.getElementById('ms-pay').value,payment_amount:document.getElementById('ms-amount').value.trim(),status:'active'});closeModal('modal-add-student');['ms-name','ms-age','ms-amount'].forEach(function(i){document.getElementById(i).value='';});showToast('Student added! 🌙','success');loadAdminData();}
-  catch(e){showToast('Could not save. Please try again.','error');}
-}
-async function saveTeacher(){
-  var name=document.getElementById('mt-name').value.trim();if(!name){showToast('Please enter a name.','error');return;}
-  try{await supa('POST','/rest/v1/teachers',{name:name,email:document.getElementById('mt-email').value.trim(),phone:document.getElementById('mt-phone').value.trim(),status:'active'});closeModal('modal-add-teacher');['mt-name','mt-email','mt-phone'].forEach(function(i){document.getElementById(i).value='';});showToast('Teacher added! 🌙','success');loadAdminData();}
-  catch(e){showToast('Could not save. Please try again.','error');}
-}
-async function saveBatch(){
-  var name=document.getElementById('mb-name').value.trim();if(!name){showToast('Please enter a batch name.','error');return;}
-  try{await supa('POST','/rest/v1/batches',{name:name,level:document.getElementById('mb-level').value,language:document.getElementById('mb-lang').value,class_day:document.getElementById('mb-day').value,class_time:document.getElementById('mb-time').value.trim()});closeModal('modal-add-batch');document.getElementById('mb-name').value='';document.getElementById('mb-time').value='';showToast('Batch created! 🌙','success');loadAdminData();}
-  catch(e){showToast('Could not save. Please try again.','error');}
-}
-async function deleteStudent(id){if(!confirm('Delete this student? This cannot be undone.'))return;try{await supa('DELETE','/rest/v1/students?id=eq.'+id);showToast('Student removed.','success');loadAdminData();}catch(e){showToast('Could not delete.','error');}}
-async function deleteTeacher(id){if(!confirm('Delete this teacher? This cannot be undone.'))return;try{await supa('DELETE','/rest/v1/teachers?id=eq.'+id);showToast('Teacher removed.','success');loadAdminData();}catch(e){showToast('Could not delete.','error');}}
-async function deleteBatch(id){if(!confirm('Delete this batch? This cannot be undone.'))return;try{await supa('DELETE','/rest/v1/batches?id=eq.'+id);showToast('Batch removed.','success');loadAdminData();}catch(e){showToast('Could not delete.','error');}}
+/* ── hero fixed ghost letters ── */
+(function(){
+  var hero = document.querySelector('.hero');
+  var letters = [
+    // Arabic — large, corners and edges
+    { char:'ع', font:"'Noto Nastaliq Urdu',serif",      size:120, left:3,  top:5,  opacity:0.07, rot:-6 },
+    { char:'ക', font:"'Noto Sans Malayalam',sans-serif", size:100, left:3,  top:75, opacity:0.07, rot:4  },
+    { char:'ف', font:"'Noto Nastaliq Urdu',serif",       size:110, left:88, top:5,  opacity:0.07, rot:-4 },
+    { char:'ر', font:"'Noto Nastaliq Urdu',serif",       size:100, left:88, top:70, opacity:0.07, rot:7  },
+    { char:'ك', font:"'Noto Nastaliq Urdu',serif",       size:120, left:46, top:65, opacity:0.07, rot:-5 },
+    { char:'ഫ', font:"'Noto Sans Malayalam',sans-serif", size:100, left:44, top:5,  opacity:0.07, rot:6  },
+    { char:'ن', font:"'Noto Nastaliq Urdu',serif",       size:110, left:3,  top:40, opacity:0.07, rot:-4 },
+  ];
+  letters.forEach(function(l){
+    var span = document.createElement('span');
+    span.className = 'hero-bg-letter';
+    span.textContent = l.char;
+    span.style.cssText = [
+      'font-family:' + l.font,
+      'font-size:'   + l.size + 'px',
+      'left:'        + l.left + '%',
+      'top:'         + l.top  + '%',
+      'color:rgba(184,144,58,' + l.opacity + ')',
+      'transform:rotate(' + l.rot + 'deg)',
+    ].join(';');
+    hero.appendChild(span);
+  });
+})();
 </script>
+
 </body>
 </html>
